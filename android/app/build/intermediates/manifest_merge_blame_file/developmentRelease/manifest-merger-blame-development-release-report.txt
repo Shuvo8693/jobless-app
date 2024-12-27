@@ -1,0 +1,298 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.joblessorg.dev"
+4    android:versionCode="1"
+5    android:versionName="1.0-dev" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:2:5-66
+11-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:2:22-64
+12    <uses-permission
+12-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:3:5-79
+13        android:name="android.permission.READ_EXTERNAL_STORAGE"
+13-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:3:22-77
+14        android:maxSdkVersion="32" />
+14-->[:file_picker] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-35
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:4:5-80
+15-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:4:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:5:5-79
+16-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:5:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:6:5-81
+17-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:6:22-78
+18    <!--
+19         Required to query activities that can process text, see:
+20         https://developer.android.com/training/package-visibility and
+21         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+22
+23         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+24    -->
+25    <queries>
+25-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:46:5-51:15
+26        <intent>
+26-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:47:9-50:18
+27            <action android:name="android.intent.action.PROCESS_TEXT" />
+27-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:48:13-72
+27-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:48:21-70
+28
+29            <data android:mimeType="text/plain" />
+29-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:49:13-50
+29-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:49:19-48
+30        </intent>
+31        <intent>
+31-->[:file_picker] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-18:18
+32            <action android:name="android.intent.action.GET_CONTENT" />
+32-->[:file_picker] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-72
+32-->[:file_picker] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\file_picker-8.1.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:21-69
+33
+34            <data android:mimeType="*/*" />
+34-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:49:13-50
+34-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:49:19-48
+35        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+36        <package android:name="com.google.android.apps.maps" />
+36-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+36-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+37    </queries>
+38    <!-- Include required permissions for Google Maps API to run. -->
+39    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+39-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+39-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+40
+41    <uses-feature
+41-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+42        android:glEsVersion="0x00020000"
+42-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+43        android:required="true" />
+43-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+44
+45    <permission
+45-->[androidx.core:core:1.13.1] C:\Users\shuvo\.gradle\caches\transforms-3\c1203d5255111f6f20fcabf66a915e05\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+46        android:name="com.joblessorg.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.1] C:\Users\shuvo\.gradle\caches\transforms-3\c1203d5255111f6f20fcabf66a915e05\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.1] C:\Users\shuvo\.gradle\caches\transforms-3\c1203d5255111f6f20fcabf66a915e05\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.joblessorg.dev.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.1] C:\Users\shuvo\.gradle\caches\transforms-3\c1203d5255111f6f20fcabf66a915e05\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.1] C:\Users\shuvo\.gradle\caches\transforms-3\c1203d5255111f6f20fcabf66a915e05\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+50
+51    <application
+52        android:name="android.app.Application"
+52-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:11:9-42
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.13.1] C:\Users\shuvo\.gradle\caches\transforms-3\c1203d5255111f6f20fcabf66a915e05\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+54        android:hardwareAccelerated="true"
+54-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:9:9-43
+55        android:icon="@mipmap/ic_launcher"
+55-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:12:9-43
+56        android:label="jobless" >
+56-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:10:9-32
+57        <activity
+57-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:13:9-34:20
+58            android:name="com.joblessorg.MainActivity"
+58-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:14:13-41
+59            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+59-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:19:13-163
+60            android:exported="true"
+60-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:15:13-36
+61            android:hardwareAccelerated="true"
+61-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:20:13-47
+62            android:launchMode="singleTop"
+62-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:16:13-43
+63            android:taskAffinity=""
+63-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:17:13-36
+64            android:theme="@style/LaunchTheme"
+64-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:18:13-47
+65            android:windowSoftInputMode="adjustResize" >
+65-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:21:13-55
+66
+67            <!--
+68                 Specifies an Android theme to apply to this Activity as soon as
+69                 the Android process has started. This theme is visible to the user
+70                 while the Flutter UI initializes. After that, this theme continues
+71                 to determine the Window background behind the Flutter UI.
+72            -->
+73            <meta-data
+73-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:26:13-29:17
+74                android:name="io.flutter.embedding.android.NormalTheme"
+74-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:27:15-70
+75                android:resource="@style/NormalTheme" />
+75-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:28:15-52
+76
+77            <intent-filter>
+77-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:30:13-33:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:31:17-68
+78-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:31:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:32:17-76
+80-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:32:27-74
+81            </intent-filter>
+82        </activity>
+83        <!--
+84             Don't delete the meta-data below.
+85             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+86        -->
+87        <meta-data
+87-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:37:9-39:33
+88            android:name="flutterEmbedding"
+88-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:38:13-44
+89            android:value="2" />
+89-->C:\Users\shuvo\StudioProjects\Jobless\android\app\src\main\AndroidManifest.xml:39:13-30
+90
+91        <provider
+91-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-19:20
+92            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+92-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-82
+93            android:authorities="com.joblessorg.dev.flutter.image_provider"
+93-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-74
+94            android:exported="false"
+94-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+95            android:grantUriPermissions="true" >
+95-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-47
+96            <meta-data
+96-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-18:75
+97                android:name="android.support.FILE_PROVIDER_PATHS"
+97-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-67
+98                android:resource="@xml/flutter_image_picker_file_paths" />
+98-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:17-72
+99        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+100        <service
+100-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33:19
+101            android:name="com.google.android.gms.metadata.ModuleDependencies"
+101-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-78
+102            android:enabled="false"
+102-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-36
+103            android:exported="false" >
+103-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+104            <intent-filter>
+104-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-28:29
+105                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+105-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-94
+105-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-91
+106            </intent-filter>
+107
+108            <meta-data
+108-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-32:36
+109                android:name="photopicker_activity:0:required"
+109-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-63
+110                android:value="" />
+110-->[:image_picker_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+16\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-33
+111        </service>
+112        <service
+112-->[:geolocator_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
+113            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+113-->[:geolocator_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+114            android:enabled="true"
+114-->[:geolocator_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
+115            android:exported="false"
+115-->[:geolocator_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+116            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+116-->[:geolocator_android] C:\Users\shuvo\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
+117        <uses-library
+117-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+118            android:name="org.apache.http.legacy"
+118-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+119            android:required="false" />
+119-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\83dc93c277318cd8e753bb7fa32abe51\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+120
+121        <activity
+121-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\4980708cb1c307040a50c028a82e567e\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+122            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+122-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\4980708cb1c307040a50c028a82e567e\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\4980708cb1c307040a50c028a82e567e\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\4980708cb1c307040a50c028a82e567e\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\cdcfef23eff782068635a64450df3659\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\cdcfef23eff782068635a64450df3659\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\shuvo\.gradle\caches\transforms-3\cdcfef23eff782068635a64450df3659\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+129
+130        <uses-library
+130-->[androidx.window:window:1.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\9e68cfd6b032de1f2bc4ac56613ecc3f\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+131            android:name="androidx.window.extensions"
+131-->[androidx.window:window:1.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\9e68cfd6b032de1f2bc4ac56613ecc3f\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+132            android:required="false" />
+132-->[androidx.window:window:1.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\9e68cfd6b032de1f2bc4ac56613ecc3f\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+133        <uses-library
+133-->[androidx.window:window:1.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\9e68cfd6b032de1f2bc4ac56613ecc3f\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+134            android:name="androidx.window.sidecar"
+134-->[androidx.window:window:1.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\9e68cfd6b032de1f2bc4ac56613ecc3f\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+135            android:required="false" />
+135-->[androidx.window:window:1.2.0] C:\Users\shuvo\.gradle\caches\transforms-3\9e68cfd6b032de1f2bc4ac56613ecc3f\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+136
+137        <provider
+137-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+138            android:name="androidx.startup.InitializationProvider"
+138-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+139            android:authorities="com.joblessorg.dev.androidx-startup"
+139-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+140            android:exported="false" >
+140-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+141            <meta-data
+141-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+142                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+142-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+143                android:value="androidx.startup" />
+143-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\shuvo\.gradle\caches\transforms-3\bd707661996776948e8e6e1a2dfec46b\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+144            <meta-data
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+145                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+146                android:value="androidx.startup" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+147        </provider>
+148
+149        <receiver
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+150            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+151            android:directBootAware="false"
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+152            android:enabled="true"
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+153            android:exported="true"
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+154            android:permission="android.permission.DUMP" >
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+156                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+157            </intent-filter>
+158            <intent-filter>
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+159                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+160            </intent-filter>
+161            <intent-filter>
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+162                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+163            </intent-filter>
+164            <intent-filter>
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+165                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\shuvo\.gradle\caches\transforms-3\719195f8ab1bf7a68156d11bb538fac6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+166            </intent-filter>
+167        </receiver>
+168    </application>
+169
+170</manifest>

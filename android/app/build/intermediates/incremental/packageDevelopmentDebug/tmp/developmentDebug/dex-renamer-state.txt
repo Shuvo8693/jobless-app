@@ -1,0 +1,16 @@
+#Fri Oct 18 20:24:38 PDT 2024
+path.4=4/classes.dex
+path.3=1/classes.dex
+path.2=0/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.4=C\:\\Users\\shuvo\\StudioProjects\\Jobless\\android\\app\\build\\intermediates\\dex\\developmentDebug\\mergeProjectDexDevelopmentDebug\\4\\classes.dex
+base.3=C\:\\Users\\shuvo\\StudioProjects\\Jobless\\android\\app\\build\\intermediates\\dex\\developmentDebug\\mergeProjectDexDevelopmentDebug\\1\\classes.dex
+base.2=C\:\\Users\\shuvo\\StudioProjects\\Jobless\\android\\app\\build\\intermediates\\dex\\developmentDebug\\mergeProjectDexDevelopmentDebug\\0\\classes.dex
+base.1=C\:\\Users\\shuvo\\StudioProjects\\Jobless\\android\\app\\build\\intermediates\\dex\\developmentDebug\\mergeLibDexDevelopmentDebug\\0\\classes.dex
+base.0=C\:\\Users\\shuvo\\StudioProjects\\Jobless\\android\\app\\build\\intermediates\\dex\\developmentDebug\\mergeExtDexDevelopmentDebug\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+renamed.4=classes5.dex
