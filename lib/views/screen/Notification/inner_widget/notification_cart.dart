@@ -22,7 +22,7 @@ class NotificationCart extends StatefulWidget {
   final NotificationController? notificationController;
   final int index;
 
-    const NotificationCart({super.key,required this.notificationResults, this.notificationController, required this.index});
+    NotificationCart({super.key,required this.notificationResults, this.notificationController, required this.index});
 
   @override
   State<NotificationCart> createState() => _NotificationCartState();
@@ -87,10 +87,10 @@ class _NotificationCartState extends State<NotificationCart> {
                       children: [
                         Obx(() {
                           return CustomButton(
-                            loading:_requestAcceptController.isLoading[widget.index]??false ,
+                            loading:_requestAcceptController.isLoading.value ,
                             onTap: () async {
                               if (widget.notificationResults.friendRequestId != null) {
-                                await _requestAcceptController.sendAcceptRequest(widget.notificationResults.friendRequestId,widget.index,toRemoveFromIndex: (){
+                                await _requestAcceptController.sendAcceptRequest(widget.notificationResults.friendRequestId,toRemoveFromIndex: (){
                                   widget.notificationController?.notificationModel.value.data?.attributes?.results?.removeAt(widget.index);
                                   widget.notificationController?.notificationModel.refresh();
                                 });

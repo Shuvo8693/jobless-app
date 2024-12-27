@@ -73,10 +73,10 @@ class _FriendAcceptCardState extends State<FriendAcceptCard> {
 
           Obx(() {
             return CustomButton(
-              loading:_requestAcceptController.isLoading[widget.index]??false ,
+              loading:_requestAcceptController.isLoading.value ,
               onTap: () async {
                 if (widget.friendRequestAttributes.sId != null) {
-                  await _requestAcceptController.sendAcceptRequest(widget.friendRequestAttributes.sId,widget.index);
+                  await _requestAcceptController.sendAcceptRequest(widget.friendRequestAttributes.sId);
 
                 }
               },

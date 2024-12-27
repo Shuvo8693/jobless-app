@@ -3,7 +3,6 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:jobless/helpers/prefs_helpers.dart';
-import 'package:jobless/s_key.dart';
 import 'package:jobless/service/api_check.dart';
 import 'package:jobless/service/api_client.dart';
 import 'dart:convert';
@@ -89,10 +88,11 @@ class RewardsController extends GetxController{
         'currency': currency,
         'payment_method_types[]': 'card',
       };
-
+      var finalSecretKey= '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';
+      var secretKey = "sk_test_51QHiicK8SHIYC4JMUucf1wHwXFj8T4U4qo5V2e4Pr4nnI0jLMTdKIEk9pRF9q23WcZFuqw2fEel0tDNvwbPn9RvV00NgY69Ox9";
       var response = await http.post(Uri.parse('https://api.stripe.com/v1/payment_intents'),
         headers: {
-          'Authorization': 'Bearer ${SKey.secretLiveKey}',
+          'Authorization': 'Bearer $finalSecretKey',
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: body,

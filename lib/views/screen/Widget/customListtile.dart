@@ -10,7 +10,7 @@ class Customlisttile extends StatelessWidget {
   final String? icon;
   final String? title;
   final VoidCallback onTap;
-   const Customlisttile({super.key,this.icon, this.title,required this.onTap});
+   Customlisttile({super.key,this.icon, this.title,required this.onTap});
 
   @override
   Widget build(BuildContext context) {
