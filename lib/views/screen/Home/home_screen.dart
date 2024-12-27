@@ -42,7 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
     });
 
     _scrollController.addListener(() async {
-      if (_scrollController.position.pixels >= _scrollController.position.maxScrollExtent - 200 && !_timelinePostController.isFetchingMore.value) {
+      if (_scrollController.position.pixels >=
+          _scrollController.position.maxScrollExtent - 200 &&
+          !_timelinePostController.isFetchingMore.value) {
         await _timelinePostController.loadMorePost();
 
       }
