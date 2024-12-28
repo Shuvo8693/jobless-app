@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
 import 'package:jobless/helpers/prefs_helpers.dart';
+import 'package:jobless/s_key.dart';
 import 'package:jobless/themes/dark_theme.dart';
 import 'package:jobless/themes/light_theme.dart';
 import 'package:jobless/utils/app_constants.dart';
@@ -16,17 +17,14 @@ import 'helpers/route.dart';
 String token='';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  String finalPublishKey='pk_live_51QHiicK8SHIYC4JMboE5e9svLpMXkCxasIIAyLu3Rn1DJ3jIRgFozQm3okpcKWAUOUQuIaEzKSrPp4PVb2zJqBnD00NRh89kcB';
-  String publishKey='pk_test_51QHiicK8SHIYC4JMhVwpulVXnohKpdQ3q3jIdC2p6kpoOJlweozsp4DLsswsSTYnuyqO2k1mxgQkVQZeJDlaku7H00yKRxAJyr';
-  Stripe.publishableKey = finalPublishKey;
-  Map<String, Map<String, String>> _languages = await di.init();
+  Stripe.publishableKey = SKey.publishLiveKey;
+  Map<String, Map<String, String>> languages = await di.init();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown
   ]).then((_){
     runApp(MyApp(
-      languages: _languages,
+      languages: languages,
     ));
   });
 
