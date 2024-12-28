@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.joblessorg.app-mergeDebugResources-95:/values-tg/values-tg.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\shuvo\\.gradle\\caches\\transforms-3\\6f6e3963d61d322952e0b73e04280b78\\transformed\\jetified-hcaptcha-20.48.6\\res\\values-tg\\values-tg.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "88",
+                        "endOffsets": "139"
+                    }
+                }
+            ]
+        }
+    ]
+}
