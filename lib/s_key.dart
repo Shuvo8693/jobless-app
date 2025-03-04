@@ -1,0 +1,11 @@
+class SKey{
+
+ ///Publishable_key
+ static String publishLiveKey='pk_live_51QHiicK8SHIYC4JMboE5e9svLpMXkCxasIIAyLu3Rn1DJ3jIRgFozQm3okpcKWAUOUQuIaEzKSrPp4PVb2zJqBnD00NRh89kcB';
+ static String publishTestKey='pk_test_51QHiicK8SHIYC4JMhVwpulVXnohKpdQ3q3jIdC2p6kpoOJlweozsp4DLsswsSTYnuyqO2k1mxgQkVQZeJDlaku7H00yKRxAJyr';
+
+ ///Secret_key
+ static String secretLiveKey= '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';
+ static String secretTestKey = "sk_test_51QHiicK8SHIYC4JMUucf1wHwXFj8T4U4qo5V2e4Pr4nnI0jLMTdKIEk9pRF9q23WcZFuqw2fEel0tDNvwbPn9RvV00NgY69Ox9";
+
+}

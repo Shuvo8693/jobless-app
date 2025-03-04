@@ -55,7 +55,7 @@ class TimelinePostController extends GetxController {
       errorMessage.value = 'Something went wrong';
     }finally{
       if (isLoadMore) {
-        isFetchingMore.value = false;
+
       } else {
         timeLineLoading.value = false;
       }
