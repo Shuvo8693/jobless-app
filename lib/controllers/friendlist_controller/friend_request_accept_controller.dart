@@ -11,10 +11,10 @@ class FriendRequestAcceptController extends GetxController {
   FriendRequestReceiveController? friendRequestReceiveController;
   FriendRequestAcceptController({this.friendRequestReceiveController});
   RxString responseMessage = ''.obs;
-  RxBool isLoading = false.obs;
-  sendAcceptRequest(dynamic requestId, {Function()? toRemoveFromIndex}) async {
+  RxMap<int,bool> isLoading = <int,bool>{}.obs;
+  sendAcceptRequest(dynamic requestId, int index, {Function()? toRemoveFromIndex}) async {
     try {
-      isLoading.value=true;
+      isLoading[index]=true;
       String token = await PrefsHelper.getString('token');
       Map<String, String> headers = {'Authorization': 'Bearer $token'};
       var request = http.Request('POST', Uri.parse(ApiConstants.acceptFriendRequestUrl(requestId)));
@@ -24,23 +24,22 @@ class FriendRequestAcceptController extends GetxController {
       final responseData = jsonDecode(responseBody);
       if (response.statusCode == 200) {
         responseMessage.value= responseData['message'];
-        isLoading.value=false;
         await friendRequestReceiveController?.fetchRequestList();
         toRemoveFromIndex!();
         Get.snackbar(responseMessage.value, 'Please refresh the screen');
         update();
       } else {
         print('Error>>>');
-        isLoading.value=false;
         responseMessage.value= responseData['message'];
         Get.snackbar(responseMessage.value, '');
         update();
       }
     } on Exception catch (error) {
       print(error.toString());
-      isLoading.value=false;
       responseMessage.value= 'Something wen wrong';
       update();
+    }finally{
+      isLoading[index]=false;
     }
   }
 }
