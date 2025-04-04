@@ -70,8 +70,7 @@ class _GroupMessageInboxScreenState extends State<GroupMessageInboxScreen> {
   void socketScrollToBottom(){
     _webSocketController.messageData.listen((messageList){
       if(_scrollController.hasClients){
-        _scrollController.animateTo(_scrollController.position.maxScrollExtent,
-          duration: Duration(microseconds: 300),
+        _scrollController.animateTo(_scrollController.position.maxScrollExtent, duration: Duration(microseconds: 300),
           curve: Curves.easeOut,
         );
       }
