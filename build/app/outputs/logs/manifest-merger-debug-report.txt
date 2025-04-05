@@ -1,0 +1,1008 @@
+-- Merging decision tree log ---
+application
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:10:5-48:19
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+MERGED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/47318f7e9813f324188d7db225086277/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/47318f7e9813f324188d7db225086277/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:20:5-75:19
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:20:5-75:19
+MERGED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-32:19
+MERGED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-32:19
+MERGED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:7:5-43:19
+MERGED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:7:5-43:19
+MERGED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:7:5-32:19
+MERGED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:7:5-32:19
+MERGED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:7:5-12:19
+MERGED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:7:5-12:19
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:14:5-83:19
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:14:5-83:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/ba119f3f5c3e0c64d20210c96486950b/transformed/jetified-glide-4.12.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/ba119f3f5c3e0c64d20210c96486950b/transformed/jetified-glide-4.12.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.android.gms:play-services-identity:18.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/c16cdfe5958b5bf9ef08a022916f19e9/transformed/jetified-play-services-identity-18.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:18.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/c16cdfe5958b5bf9ef08a022916f19e9/transformed/jetified-play-services-identity-18.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:19:5-23:19
+MERGED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
+MERGED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:7:5-12:19
+MERGED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.material:material:1.11.0] /Users/quantumalliance/.gradle/caches/transforms-3/be92561e674aa9f7d058a40971a0ae38/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] /Users/quantumalliance/.gradle/caches/transforms-3/be92561e674aa9f7d058a40971a0ae38/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/quantumalliance/.gradle/caches/transforms-3/12471250736be1f5cffffab62dd92e58/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/quantumalliance/.gradle/caches/transforms-3/12471250736be1f5cffffab62dd92e58/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/c1bade394c8852e66982e71cb834131a/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/c1bade394c8852e66982e71cb834131a/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/043fc7abc9b28904b905bd8d6ad3e3c6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/043fc7abc9b28904b905bd8d6ad3e3c6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/da2ff764ec68a630d2c657fabc3d7b95/transformed/jetified-gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/da2ff764ec68a630d2c657fabc3d7b95/transformed/jetified-gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:9:5-13:19
+	android:extractNativeLibs
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:name
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:1:1-58:12
+MERGED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:1:1-58:12
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+MERGED from [:shared_preferences_android] /Users/quantumalliance/StudioProjects/jobless-project/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:stripe_android] /Users/quantumalliance/StudioProjects/jobless-project/build/stripe_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/47318f7e9813f324188d7db225086277/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:2:1-77:12
+MERGED from [:pdfx] /Users/quantumalliance/StudioProjects/jobless-project/build/pdfx/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:device_info_plus] /Users/quantumalliance/StudioProjects/jobless-project/build/device_info_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_pdfview] /Users/quantumalliance/StudioProjects/jobless-project/build/flutter_pdfview/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:google_maps_flutter_android] /Users/quantumalliance/StudioProjects/jobless-project/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-34:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/quantumalliance/StudioProjects/jobless-project/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:geocoding_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geocoding_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider_android] /Users/quantumalliance/StudioProjects/jobless-project/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler_android] /Users/quantumalliance/StudioProjects/jobless-project/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite_android] /Users/quantumalliance/StudioProjects/jobless-project/build/sqflite_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.mhiew:android-pdf-viewer:3.2.0-beta.3] /Users/quantumalliance/.gradle/caches/transforms-3/834ee9293c7618413eda1536e093251a/transformed/jetified-android-pdf-viewer-3.2.0-beta.3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.stripe:stripe-android:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/d9784fce92c53d3746b2d01524199768/transformed/jetified-stripe-android-20.48.6/AndroidManifest.xml:2:1-7:12
+MERGED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:2:1-45:12
+MERGED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:2:1-34:12
+MERGED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:2:1-14:12
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:2:1-85:12
+MERGED from [com.google.pay.button:compose-pay-button:0.1.3] /Users/quantumalliance/.gradle/caches/transforms-3/58d474f3b197673e82391943a6d5bd7f/transformed/jetified-compose-pay-button-0.1.3/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-wallet:19.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/ebec55465bf4da5c90f214ffda32febe/transformed/jetified-play-services-wallet-19.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:17:1-44:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/ba119f3f5c3e0c64d20210c96486950b/transformed/jetified-glide-4.12.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/1b58e4b72da706f3129eb419531e5e96/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-identity:18.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/c16cdfe5958b5bf9ef08a022916f19e9/transformed/jetified-play-services-identity-18.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:16:1-24:12
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/5044a5985a69abfa1982150f167505b4/transformed/jetified-datastore-preferences-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.datastore:datastore:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/99326f2ba521f7d85164bf5f15555cdb/transformed/jetified-datastore-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.window:window-java:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/44ee5c0e19bed288c3e80560c2e09a24/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:17:1-21:12
+MERGED from [com.stripe:stripe-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/38efe704cf5daa1b365f802b6a8d3263/transformed/jetified-stripe-ui-core-20.48.6/AndroidManifest.xml:2:1-7:12
+MERGED from [com.stripe:payments-model:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/39c2f664756d3dbf25f4e44c87d2a7af/transformed/jetified-payments-model-20.48.6/AndroidManifest.xml:2:1-7:12
+MERGED from [com.stripe:stripe-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/8b2eeed6eaf98d9c952b9ad2c7b1abe3/transformed/jetified-stripe-core-20.48.6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/26f9ed9123abceaab5474a684726d340/transformed/navigation-common-2.7.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/10990b5fd65de081fa245dd31bfc4693/transformed/navigation-runtime-2.7.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/3f16873558e00b09068668f98a981020/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/1e76bc5106ea1afdb3fbadfe9d67d61d/transformed/navigation-runtime-ktx-2.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/3022872d7922b41ff6514c5dfc471ec4/transformed/jetified-navigation-compose-2.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-themeadapter-appcompat:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/0dc0001ea8b614b435439ed450274ec2/transformed/jetified-accompanist-themeadapter-appcompat-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [com.google.accompanist:accompanist-themeadapter-material:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/603d50d73c7141d2da47e103660a85ad/transformed/jetified-accompanist-themeadapter-material-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [com.google.accompanist:accompanist-themeadapter-material3:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/7e1e50989d69b74d3653047ffff264fa/transformed/jetified-accompanist-themeadapter-material3-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.material3:material3:1.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/96ed6bbe482c2dd501661403c633091b/transformed/jetified-material3-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/987557f13e44279096f4694eae286824/transformed/jetified-material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/741474465a31c20b47b4e066aab1a74e/transformed/jetified-material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/e07e656009fc3f1bdf040d2e2e108b77/transformed/jetified-material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-themeadapter-core:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/ccd4262f366d0c091410a7fb4adfdf1c/transformed/jetified-accompanist-themeadapter-core-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/06c0571a7f3ebeae8e07f2df6e84f330/transformed/jetified-accompanist-flowlayout-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/cede0a25202b25a44e734e04990ddfdc/transformed/jetified-animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/c92ae4d3f6694f86c5a11b989d2c81a6/transformed/jetified-animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/bd8197a89c10988881b7753869f2fbf2/transformed/jetified-foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/cdd819f68e19ee3488e50d02101f54ad/transformed/jetified-foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/766212184976610d9302c9f501c8ef4a/transformed/jetified-ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/0c9dfd761ab1d6b63310656c69035234/transformed/jetified-ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/603ace52b54204df233fda56b8c911b3/transformed/jetified-ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/a1f4473ee64fb048f6456f7629f311b3/transformed/jetified-ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/4cc009d3d4ed00d99e0637fe0032c988/transformed/jetified-ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/3047c45e5b6434c8818b06926e40638a/transformed/jetified-ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-viewbinding:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/fce9f59f012d3708b259366b385deba2/transformed/jetified-ui-viewbinding-1.5.4/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/af88b3142cf8660be48c9ce319163541/transformed/jetified-accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.fragment:fragment-ktx:1.7.1] /Users/quantumalliance/.gradle/caches/transforms-3/eda4ee5a053a67c7f2c684299d13e86e/transformed/jetified-fragment-ktx-1.7.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/c22f9cb4cd29dd04c6cf242ffb6981c7/transformed/jetified-activity-ktx-1.9.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/81a8194c1a750f9971b7edfab1dc061a/transformed/jetified-activity-compose-1.9.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.11.0] /Users/quantumalliance/.gradle/caches/transforms-3/be92561e674aa9f7d058a40971a0ae38/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/quantumalliance/.gradle/caches/transforms-3/12471250736be1f5cffffab62dd92e58/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.stripe:hcaptcha:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/bfe7479b01dbe746f3839006a98b39e7/transformed/jetified-hcaptcha-20.48.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/quantumalliance/.gradle/caches/transforms-3/e80155837c26fb4d3d33c9be81ec85ee/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/quantumalliance/.gradle/caches/transforms-3/e703be2df2acd3244698dd09ec50464e/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/f95bb69ee010bf53fbd5b194dc5ee5c1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/bb7f6ec2060310a93d1615ac9f06f4c7/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/35c301039f5e1f3ded92c47511439f64/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/b98bf0d857400b4de8570fbcaf5146f4/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/ada28d681539b243e9954640c7493113/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/678366a1b178b96e235c63b54af90330/transformed/jetified-lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/81007511ecff2d42bdcd5150fe389b50/transformed/jetified-runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/0e84cd19321048f3940e537d343d4996/transformed/jetified-runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-livedata:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/073a3e985fb57e39c3dbbbc0c9c19e8b/transformed/jetified-runtime-livedata-1.5.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/b46329debeccad3b1272cde160b13889/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/e9afc1ea4d63c05b04a553368c6b90c7/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/f421135a23445001a3554cb84c59dd61/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/cfca3be6a53238d5fc856b24637f4fcf/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/e4252459b112b117b18683901b08c844/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/0ed4a8cb72332766a5bf4a452a54793d/transformed/jetified-emoji2-views-helper-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4784effd4aa07b705ff866a502675b21/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4ffcae8c82e6b004a3ea60139a1da823/transformed/jetified-lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/a6ba6de4adca96a5f852dc44cf56e8e0/transformed/jetified-ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/c1bade394c8852e66982e71cb834131a/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/quantumalliance/.gradle/caches/transforms-3/8d473faf68100df426ac58562ab8f3dc/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/quantumalliance/.gradle/caches/transforms-3/2d3605768d6b336921c35ae7be993f54/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.7.1] /Users/quantumalliance/.gradle/caches/transforms-3/6633c46cd783c2a21639f8f5fece29fa/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/44f40e4e756cf2388875c012623597be/transformed/jetified-activity-1.9.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4dc25db1a255377c75372ac64f7e287b/transformed/browser-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.media:media:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/68eb1b29d90a936df0e281c29f4c24f8/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/90fe88768695f82095bf23283a092042/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/7f2aa0a01b863306acfeec4375b5a15e/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/9dca28ebaac430d52067bda4f6a79e1b/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/98eac574e073377009c6a4daa402b73a/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/085b8f6df927ef31bf16fcf3a8931880/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/a28f2bc55060c7b799ae85ffdfc559b8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/11dc2c4b2cf16d34b2427bb42d8259a3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/ba791ebf62e2919b338cc583328d715f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/e2b4412df32893405f8dd2e93c3975db/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/48c69d167e8fdc6ed28e595637466b1a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/8ea90602299a80c9b36ad74ea75a304e/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/0b0cbb5a044153735fbda15545e46e2a/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/679b2d144496ffd1e93ba92c348e5bb6/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/5926fff56115618d97c423d5b0798ce7/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/quantumalliance/.gradle/caches/transforms-3/3d353abc8fa209457ee3ecf0aa119d2a/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/quantumalliance/.gradle/caches/transforms-3/29c2fae0c970d9b458f5b4b797592b67/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/dcfe1b560634644d58aaf366978a77a8/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/quantumalliance/.gradle/caches/transforms-3/b0fca7e105faf6aa30511e5413320951/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f532d5dca181d1f9bcc5ae588afaa84/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/bbe357ff2e929654b3d3bd1a42ab22c5/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/043fc7abc9b28904b905bd8d6ad3e3c6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/da2ff764ec68a630d2c657fabc3d7b95/transformed/jetified-gifdecoder-4.12.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/abf03ae3fcc131be6c66a1a6ae2cae9c/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/c478a43491df5c22e549dc575df98a5f/transformed/jetified-viewbinding-8.3.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/282555e602c9f4df71600e2454df9156/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/d4bb6f40f9711d7122ed5f270b49a2b5/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/fc71cf3bce167f5f07d5104f7a5df173/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/f41e65b5446c647f7d1db1fa3931924c/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/e4040ae39634df5d8da127fbf5d59126/transformed/jetified-core-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/cd5e399e796e0dd092d6a84492ca302c/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/quantumalliance/.gradle/caches/transforms-3/dedbb004aab6805f51e595ccefbd485c/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.mhiew:pdfium-android:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/678dfe8b885487c42c534114aec13de8/transformed/jetified-pdfium-android-1.9.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:2:1-15:12
+	package
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:4:5-66
+MERGED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:4:5-66
+MERGED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:4:5-66
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:7:5-67
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:8:22-78
+queries
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:51:5-56:15
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:10:5-18:15
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:10:5-18:15
+MERGED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:15
+MERGED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:15
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:8:5-12:15
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:8:5-12:15
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:52:9-55:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:53:13-72
+	android:name
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:53:21-70
+data
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:54:13-50
+	android:mimeType
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/main/AndroidManifest.xml:54:19-48
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml:7:22-78
+uses-sdk
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+MERGED from [:shared_preferences_android] /Users/quantumalliance/StudioProjects/jobless-project/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/quantumalliance/StudioProjects/jobless-project/build/shared_preferences_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:stripe_android] /Users/quantumalliance/StudioProjects/jobless-project/build/stripe_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:stripe_android] /Users/quantumalliance/StudioProjects/jobless-project/build/stripe_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/47318f7e9813f324188d7db225086277/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/47318f7e9813f324188d7db225086277/transformed/jetified-play-services-location-21.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [:pdfx] /Users/quantumalliance/StudioProjects/jobless-project/build/pdfx/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:pdfx] /Users/quantumalliance/StudioProjects/jobless-project/build/pdfx/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:device_info_plus] /Users/quantumalliance/StudioProjects/jobless-project/build/device_info_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:device_info_plus] /Users/quantumalliance/StudioProjects/jobless-project/build/device_info_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_pdfview] /Users/quantumalliance/StudioProjects/jobless-project/build/flutter_pdfview/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_pdfview] /Users/quantumalliance/StudioProjects/jobless-project/build/flutter_pdfview/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter_android] /Users/quantumalliance/StudioProjects/jobless-project/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter_android] /Users/quantumalliance/StudioProjects/jobless-project/build/google_maps_flutter_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/quantumalliance/StudioProjects/jobless-project/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/quantumalliance/StudioProjects/jobless-project/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geocoding_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geocoding_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geocoding_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geocoding_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/quantumalliance/StudioProjects/jobless-project/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/quantumalliance/StudioProjects/jobless-project/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] /Users/quantumalliance/StudioProjects/jobless-project/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] /Users/quantumalliance/StudioProjects/jobless-project/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite_android] /Users/quantumalliance/StudioProjects/jobless-project/build/sqflite_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite_android] /Users/quantumalliance/StudioProjects/jobless-project/build/sqflite_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.github.mhiew:android-pdf-viewer:3.2.0-beta.3] /Users/quantumalliance/.gradle/caches/transforms-3/834ee9293c7618413eda1536e093251a/transformed/jetified-android-pdf-viewer-3.2.0-beta.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.mhiew:android-pdf-viewer:3.2.0-beta.3] /Users/quantumalliance/.gradle/caches/transforms-3/834ee9293c7618413eda1536e093251a/transformed/jetified-android-pdf-viewer-3.2.0-beta.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:stripe-android:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/d9784fce92c53d3746b2d01524199768/transformed/jetified-stripe-android-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-android:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/d9784fce92c53d3746b2d01524199768/transformed/jetified-stripe-android-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.pay.button:compose-pay-button:0.1.3] /Users/quantumalliance/.gradle/caches/transforms-3/58d474f3b197673e82391943a6d5bd7f/transformed/jetified-compose-pay-button-0.1.3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.pay.button:compose-pay-button:0.1.3] /Users/quantumalliance/.gradle/caches/transforms-3/58d474f3b197673e82391943a6d5bd7f/transformed/jetified-compose-pay-button-0.1.3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-wallet:19.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/ebec55465bf4da5c90f214ffda32febe/transformed/jetified-play-services-wallet-19.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:19.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/ebec55465bf4da5c90f214ffda32febe/transformed/jetified-play-services-wallet-19.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/ba119f3f5c3e0c64d20210c96486950b/transformed/jetified-glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/ba119f3f5c3e0c64d20210c96486950b/transformed/jetified-glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/1b58e4b72da706f3129eb419531e5e96/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/1b58e4b72da706f3129eb419531e5e96/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:18.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/c16cdfe5958b5bf9ef08a022916f19e9/transformed/jetified-play-services-identity-18.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:18.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/c16cdfe5958b5bf9ef08a022916f19e9/transformed/jetified-play-services-identity-18.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/5044a5985a69abfa1982150f167505b4/transformed/jetified-datastore-preferences-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/5044a5985a69abfa1982150f167505b4/transformed/jetified-datastore-preferences-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/99326f2ba521f7d85164bf5f15555cdb/transformed/jetified-datastore-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/99326f2ba521f7d85164bf5f15555cdb/transformed/jetified-datastore-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window-java:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/44ee5c0e19bed288c3e80560c2e09a24/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
+MERGED from [androidx.window:window-java:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/44ee5c0e19bed288c3e80560c2e09a24/transformed/jetified-window-java-1.2.0/AndroidManifest.xml:19:5-44
+MERGED from [com.stripe:stripe-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/38efe704cf5daa1b365f802b6a8d3263/transformed/jetified-stripe-ui-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/38efe704cf5daa1b365f802b6a8d3263/transformed/jetified-stripe-ui-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:payments-model:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/39c2f664756d3dbf25f4e44c87d2a7af/transformed/jetified-payments-model-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:payments-model:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/39c2f664756d3dbf25f4e44c87d2a7af/transformed/jetified-payments-model-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/8b2eeed6eaf98d9c952b9ad2c7b1abe3/transformed/jetified-stripe-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/8b2eeed6eaf98d9c952b9ad2c7b1abe3/transformed/jetified-stripe-core-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/26f9ed9123abceaab5474a684726d340/transformed/navigation-common-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/26f9ed9123abceaab5474a684726d340/transformed/navigation-common-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/10990b5fd65de081fa245dd31bfc4693/transformed/navigation-runtime-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/10990b5fd65de081fa245dd31bfc4693/transformed/navigation-runtime-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/3f16873558e00b09068668f98a981020/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/3f16873558e00b09068668f98a981020/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/1e76bc5106ea1afdb3fbadfe9d67d61d/transformed/navigation-runtime-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/1e76bc5106ea1afdb3fbadfe9d67d61d/transformed/navigation-runtime-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/3022872d7922b41ff6514c5dfc471ec4/transformed/jetified-navigation-compose-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.6] /Users/quantumalliance/.gradle/caches/transforms-3/3022872d7922b41ff6514c5dfc471ec4/transformed/jetified-navigation-compose-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-appcompat:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/0dc0001ea8b614b435439ed450274ec2/transformed/jetified-accompanist-themeadapter-appcompat-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-appcompat:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/0dc0001ea8b614b435439ed450274ec2/transformed/jetified-accompanist-themeadapter-appcompat-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-material:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/603d50d73c7141d2da47e103660a85ad/transformed/jetified-accompanist-themeadapter-material-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-material:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/603d50d73c7141d2da47e103660a85ad/transformed/jetified-accompanist-themeadapter-material-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-material3:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/7e1e50989d69b74d3653047ffff264fa/transformed/jetified-accompanist-themeadapter-material3-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-material3:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/7e1e50989d69b74d3653047ffff264fa/transformed/jetified-accompanist-themeadapter-material3-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.material3:material3:1.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/96ed6bbe482c2dd501661403c633091b/transformed/jetified-material3-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.0.1] /Users/quantumalliance/.gradle/caches/transforms-3/96ed6bbe482c2dd501661403c633091b/transformed/jetified-material3-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/987557f13e44279096f4694eae286824/transformed/jetified-material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/987557f13e44279096f4694eae286824/transformed/jetified-material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/741474465a31c20b47b4e066aab1a74e/transformed/jetified-material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/741474465a31c20b47b4e066aab1a74e/transformed/jetified-material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/e07e656009fc3f1bdf040d2e2e108b77/transformed/jetified-material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/e07e656009fc3f1bdf040d2e2e108b77/transformed/jetified-material-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-core:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/ccd4262f366d0c091410a7fb4adfdf1c/transformed/jetified-accompanist-themeadapter-core-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-themeadapter-core:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/ccd4262f366d0c091410a7fb4adfdf1c/transformed/jetified-accompanist-themeadapter-core-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/06c0571a7f3ebeae8e07f2df6e84f330/transformed/jetified-accompanist-flowlayout-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/06c0571a7f3ebeae8e07f2df6e84f330/transformed/jetified-accompanist-flowlayout-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/cede0a25202b25a44e734e04990ddfdc/transformed/jetified-animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/cede0a25202b25a44e734e04990ddfdc/transformed/jetified-animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/c92ae4d3f6694f86c5a11b989d2c81a6/transformed/jetified-animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/c92ae4d3f6694f86c5a11b989d2c81a6/transformed/jetified-animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/bd8197a89c10988881b7753869f2fbf2/transformed/jetified-foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/bd8197a89c10988881b7753869f2fbf2/transformed/jetified-foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/cdd819f68e19ee3488e50d02101f54ad/transformed/jetified-foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/cdd819f68e19ee3488e50d02101f54ad/transformed/jetified-foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/766212184976610d9302c9f501c8ef4a/transformed/jetified-ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/766212184976610d9302c9f501c8ef4a/transformed/jetified-ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/0c9dfd761ab1d6b63310656c69035234/transformed/jetified-ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/0c9dfd761ab1d6b63310656c69035234/transformed/jetified-ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/603ace52b54204df233fda56b8c911b3/transformed/jetified-ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/603ace52b54204df233fda56b8c911b3/transformed/jetified-ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/a1f4473ee64fb048f6456f7629f311b3/transformed/jetified-ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/a1f4473ee64fb048f6456f7629f311b3/transformed/jetified-ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/4cc009d3d4ed00d99e0637fe0032c988/transformed/jetified-ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/4cc009d3d4ed00d99e0637fe0032c988/transformed/jetified-ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/3047c45e5b6434c8818b06926e40638a/transformed/jetified-ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/3047c45e5b6434c8818b06926e40638a/transformed/jetified-ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-viewbinding:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/fce9f59f012d3708b259366b385deba2/transformed/jetified-ui-viewbinding-1.5.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-viewbinding:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/fce9f59f012d3708b259366b385deba2/transformed/jetified-ui-viewbinding-1.5.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/af88b3142cf8660be48c9ce319163541/transformed/jetified-accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /Users/quantumalliance/.gradle/caches/transforms-3/af88b3142cf8660be48c9ce319163541/transformed/jetified-accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.7.1] /Users/quantumalliance/.gradle/caches/transforms-3/eda4ee5a053a67c7f2c684299d13e86e/transformed/jetified-fragment-ktx-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.7.1] /Users/quantumalliance/.gradle/caches/transforms-3/eda4ee5a053a67c7f2c684299d13e86e/transformed/jetified-fragment-ktx-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/c22f9cb4cd29dd04c6cf242ffb6981c7/transformed/jetified-activity-ktx-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/c22f9cb4cd29dd04c6cf242ffb6981c7/transformed/jetified-activity-ktx-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/81a8194c1a750f9971b7edfab1dc061a/transformed/jetified-activity-compose-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/81a8194c1a750f9971b7edfab1dc061a/transformed/jetified-activity-compose-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/quantumalliance/.gradle/caches/transforms-3/be92561e674aa9f7d058a40971a0ae38/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/quantumalliance/.gradle/caches/transforms-3/be92561e674aa9f7d058a40971a0ae38/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/quantumalliance/.gradle/caches/transforms-3/12471250736be1f5cffffab62dd92e58/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/quantumalliance/.gradle/caches/transforms-3/12471250736be1f5cffffab62dd92e58/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:hcaptcha:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/bfe7479b01dbe746f3839006a98b39e7/transformed/jetified-hcaptcha-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:hcaptcha:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/bfe7479b01dbe746f3839006a98b39e7/transformed/jetified-hcaptcha-20.48.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/quantumalliance/.gradle/caches/transforms-3/e80155837c26fb4d3d33c9be81ec85ee/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/quantumalliance/.gradle/caches/transforms-3/e80155837c26fb4d3d33c9be81ec85ee/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/quantumalliance/.gradle/caches/transforms-3/e703be2df2acd3244698dd09ec50464e/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/quantumalliance/.gradle/caches/transforms-3/e703be2df2acd3244698dd09ec50464e/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/f95bb69ee010bf53fbd5b194dc5ee5c1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/f95bb69ee010bf53fbd5b194dc5ee5c1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/bb7f6ec2060310a93d1615ac9f06f4c7/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/bb7f6ec2060310a93d1615ac9f06f4c7/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/35c301039f5e1f3ded92c47511439f64/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/35c301039f5e1f3ded92c47511439f64/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/b98bf0d857400b4de8570fbcaf5146f4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/b98bf0d857400b4de8570fbcaf5146f4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/ada28d681539b243e9954640c7493113/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/ada28d681539b243e9954640c7493113/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/678366a1b178b96e235c63b54af90330/transformed/jetified-lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/678366a1b178b96e235c63b54af90330/transformed/jetified-lifecycle-livedata-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/81007511ecff2d42bdcd5150fe389b50/transformed/jetified-runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/81007511ecff2d42bdcd5150fe389b50/transformed/jetified-runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/0e84cd19321048f3940e537d343d4996/transformed/jetified-runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/0e84cd19321048f3940e537d343d4996/transformed/jetified-runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/073a3e985fb57e39c3dbbbc0c9c19e8b/transformed/jetified-runtime-livedata-1.5.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/073a3e985fb57e39c3dbbbc0c9c19e8b/transformed/jetified-runtime-livedata-1.5.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/b46329debeccad3b1272cde160b13889/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/b46329debeccad3b1272cde160b13889/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/e9afc1ea4d63c05b04a553368c6b90c7/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/e9afc1ea4d63c05b04a553368c6b90c7/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/f421135a23445001a3554cb84c59dd61/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/f421135a23445001a3554cb84c59dd61/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/cfca3be6a53238d5fc856b24637f4fcf/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/cfca3be6a53238d5fc856b24637f4fcf/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/e4252459b112b117b18683901b08c844/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/e4252459b112b117b18683901b08c844/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/0ed4a8cb72332766a5bf4a452a54793d/transformed/jetified-emoji2-views-helper-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/0ed4a8cb72332766a5bf4a452a54793d/transformed/jetified-emoji2-views-helper-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4784effd4aa07b705ff866a502675b21/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4784effd4aa07b705ff866a502675b21/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4ffcae8c82e6b004a3ea60139a1da823/transformed/jetified-lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4ffcae8c82e6b004a3ea60139a1da823/transformed/jetified-lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/a6ba6de4adca96a5f852dc44cf56e8e0/transformed/jetified-ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /Users/quantumalliance/.gradle/caches/transforms-3/a6ba6de4adca96a5f852dc44cf56e8e0/transformed/jetified-ui-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/c1bade394c8852e66982e71cb834131a/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/c1bade394c8852e66982e71cb834131a/transformed/jetified-play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/quantumalliance/.gradle/caches/transforms-3/8d473faf68100df426ac58562ab8f3dc/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/quantumalliance/.gradle/caches/transforms-3/8d473faf68100df426ac58562ab8f3dc/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/quantumalliance/.gradle/caches/transforms-3/2d3605768d6b336921c35ae7be993f54/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/quantumalliance/.gradle/caches/transforms-3/2d3605768d6b336921c35ae7be993f54/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.7.1] /Users/quantumalliance/.gradle/caches/transforms-3/6633c46cd783c2a21639f8f5fece29fa/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.7.1] /Users/quantumalliance/.gradle/caches/transforms-3/6633c46cd783c2a21639f8f5fece29fa/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/44f40e4e756cf2388875c012623597be/transformed/jetified-activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/44f40e4e756cf2388875c012623597be/transformed/jetified-activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4dc25db1a255377c75372ac64f7e287b/transformed/browser-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/4dc25db1a255377c75372ac64f7e287b/transformed/browser-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/68eb1b29d90a936df0e281c29f4c24f8/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/68eb1b29d90a936df0e281c29f4c24f8/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/90fe88768695f82095bf23283a092042/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/90fe88768695f82095bf23283a092042/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/7f2aa0a01b863306acfeec4375b5a15e/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/7f2aa0a01b863306acfeec4375b5a15e/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/9dca28ebaac430d52067bda4f6a79e1b/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/9dca28ebaac430d52067bda4f6a79e1b/transformed/jetified-core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/98eac574e073377009c6a4daa402b73a/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/98eac574e073377009c6a4daa402b73a/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/085b8f6df927ef31bf16fcf3a8931880/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/085b8f6df927ef31bf16fcf3a8931880/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/a28f2bc55060c7b799ae85ffdfc559b8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/a28f2bc55060c7b799ae85ffdfc559b8/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/11dc2c4b2cf16d34b2427bb42d8259a3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/11dc2c4b2cf16d34b2427bb42d8259a3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/ba791ebf62e2919b338cc583328d715f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/ba791ebf62e2919b338cc583328d715f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/e2b4412df32893405f8dd2e93c3975db/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/e2b4412df32893405f8dd2e93c3975db/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/48c69d167e8fdc6ed28e595637466b1a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/48c69d167e8fdc6ed28e595637466b1a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/8ea90602299a80c9b36ad74ea75a304e/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/8ea90602299a80c9b36ad74ea75a304e/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/0b0cbb5a044153735fbda15545e46e2a/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/0b0cbb5a044153735fbda15545e46e2a/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/679b2d144496ffd1e93ba92c348e5bb6/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/679b2d144496ffd1e93ba92c348e5bb6/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/5926fff56115618d97c423d5b0798ce7/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/5926fff56115618d97c423d5b0798ce7/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/quantumalliance/.gradle/caches/transforms-3/3d353abc8fa209457ee3ecf0aa119d2a/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/quantumalliance/.gradle/caches/transforms-3/3d353abc8fa209457ee3ecf0aa119d2a/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/quantumalliance/.gradle/caches/transforms-3/29c2fae0c970d9b458f5b4b797592b67/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/quantumalliance/.gradle/caches/transforms-3/29c2fae0c970d9b458f5b4b797592b67/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/dcfe1b560634644d58aaf366978a77a8/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/dcfe1b560634644d58aaf366978a77a8/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/quantumalliance/.gradle/caches/transforms-3/b0fca7e105faf6aa30511e5413320951/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/quantumalliance/.gradle/caches/transforms-3/b0fca7e105faf6aa30511e5413320951/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f532d5dca181d1f9bcc5ae588afaa84/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f532d5dca181d1f9bcc5ae588afaa84/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/bbe357ff2e929654b3d3bd1a42ab22c5/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/bbe357ff2e929654b3d3bd1a42ab22c5/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/043fc7abc9b28904b905bd8d6ad3e3c6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/043fc7abc9b28904b905bd8d6ad3e3c6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/da2ff764ec68a630d2c657fabc3d7b95/transformed/jetified-gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/quantumalliance/.gradle/caches/transforms-3/da2ff764ec68a630d2c657fabc3d7b95/transformed/jetified-gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/abf03ae3fcc131be6c66a1a6ae2cae9c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/abf03ae3fcc131be6c66a1a6ae2cae9c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/c478a43491df5c22e549dc575df98a5f/transformed/jetified-viewbinding-8.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/c478a43491df5c22e549dc575df98a5f/transformed/jetified-viewbinding-8.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/282555e602c9f4df71600e2454df9156/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/282555e602c9f4df71600e2454df9156/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/d4bb6f40f9711d7122ed5f270b49a2b5/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/d4bb6f40f9711d7122ed5f270b49a2b5/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/fc71cf3bce167f5f07d5104f7a5df173/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/fc71cf3bce167f5f07d5104f7a5df173/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/f41e65b5446c647f7d1db1fa3931924c/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/f41e65b5446c647f7d1db1fa3931924c/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/e4040ae39634df5d8da127fbf5d59126/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/e4040ae39634df5d8da127fbf5d59126/transformed/jetified-core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/cd5e399e796e0dd092d6a84492ca302c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/quantumalliance/.gradle/caches/transforms-3/cd5e399e796e0dd092d6a84492ca302c/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/quantumalliance/.gradle/caches/transforms-3/dedbb004aab6805f51e595ccefbd485c/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/quantumalliance/.gradle/caches/transforms-3/dedbb004aab6805f51e595ccefbd485c/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:5:5-43
+MERGED from [com.github.mhiew:pdfium-android:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/678dfe8b885487c42c534114aec13de8/transformed/jetified-pdfium-android-1.9.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.mhiew:pdfium-android:1.9.2] /Users/quantumalliance/.gradle/caches/transforms-3/678dfe8b885487c42c534114aec13de8/transformed/jetified-pdfium-android-1.9.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:5:5-7:41
+	android:targetSdkVersion
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/quantumalliance/StudioProjects/jobless-project/android/app/src/debug/AndroidManifest.xml
+service#com.baseflow.geolocator.GeolocatorLocationService
+ADDED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:56
+	android:enabled
+		ADDED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-35
+	android:exported
+		ADDED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+	android:foregroundServiceType
+		ADDED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-53
+	android:name
+		ADDED from [:geolocator_android] /Users/quantumalliance/StudioProjects/jobless-project/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-77
+intent#action:name:android.intent.action.VIEW+data:scheme:http
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:13:9-17:18
+action#android.intent.action.VIEW
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:14:13-65
+	android:name
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:14:21-62
+activity#com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:21:9-65:20
+	android:launchMode
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:24:13-44
+	android:exported
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:22:13-109
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:auth-redirect+data:host:link-accounts+data:host:link-accounts+data:host:link-accounts+data:host:link-native-accounts+data:host:native-redirect+data:path:/${applicationId}/cancel+data:path:/${applicationId}/success+data:pathPrefix:/${applicationId}+data:pathPrefix:/${applicationId}+data:pathPrefix:/${applicationId}/authentication_return+data:pathPrefix:/${applicationId}/authentication_return+data:scheme:stripe+data:scheme:stripe-auth+data:scheme:stripe-auth+data:scheme:stripe-auth+data:scheme:stripe-auth+data:scheme:stripe-auth
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:25:13-64:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:auth-redirect+data:host:link-accounts+data:host:link-accounts+data:host:link-accounts+data:host:link-native-accounts+data:host:native-redirect+data:path:/com.joblessorg/cancel+data:path:/com.joblessorg/success+data:pathPrefix:/com.joblessorg+data:pathPrefix:/com.joblessorg+data:pathPrefix:/com.joblessorg/authentication_return+data:pathPrefix:/com.joblessorg/authentication_return+data:scheme:stripe+data:scheme:stripe-auth+data:scheme:stripe-auth+data:scheme:stripe-auth+data:scheme:stripe-auth+data:scheme:stripe-auth
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:25:13-64:29
+category#android.intent.category.DEFAULT
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:28:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:29:17-78
+	android:name
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:29:27-75
+activity#com.stripe.android.financialconnections.FinancialConnectionsSheetActivity
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:66:9-69:77
+	android:exported
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:68:13-37
+	android:theme
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:69:13-74
+	android:name
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:67:13-101
+activity#com.stripe.android.financialconnections.ui.FinancialConnectionsSheetNativeActivity
+ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:70:9-74:58
+	android:windowSoftInputMode
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:74:13-55
+	android:exported
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:72:13-37
+	android:theme
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:73:13-74
+	android:name
+		ADDED from [com.stripe:financial-connections:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/f676739f0ce6a3b3f1cdc5630220fe0c/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:71:13-110
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-9:38
+	android:maxSdkVersion
+		ADDED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-35
+	android:name
+		ADDED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-64
+intent#action:name:android.intent.action.GET_CONTENT+data:mimeType:*/*
+ADDED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:18
+action#android.intent.action.GET_CONTENT
+ADDED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-72
+	android:name
+		ADDED from [:file_picker] /Users/quantumalliance/StudioProjects/jobless-project/build/file_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:21-69
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-17:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
+	android:authorities
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+	android:exported
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:75
+	android:resource
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-72
+	android:name
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+service#com.google.android.gms.metadata.ModuleDependencies
+ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-31:19
+	android:enabled
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
+	android:exported
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+	tools:ignore
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-40
+	android:name
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-78
+intent-filter#action:name:com.google.android.gms.metadata.MODULE_DEPENDENCIES
+ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:29
+action#com.google.android.gms.metadata.MODULE_DEPENDENCIES
+ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-94
+	android:name
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-91
+meta-data#photopicker_activity:0:required
+ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:36
+	android:value
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
+	android:name
+		ADDED from [:image_picker_android] /Users/quantumalliance/StudioProjects/jobless-project/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+activity#com.stripe.android.paymentsheet.PaymentSheetActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:8:9-11:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:11:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:9:13-80
+activity#com.stripe.android.paymentsheet.PaymentOptionsActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:12:9-15:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:15:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:13:13-82
+activity#com.stripe.android.customersheet.CustomerSheetActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:16:9-19:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:18:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:19:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:17:13-82
+activity#com.stripe.android.paymentsheet.addresselement.AddressElementActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:20:9-23:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:22:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:21:13-97
+activity#com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:24:9-27:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:27:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:25:13-118
+activity#com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:28:9-31:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:31:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:29:13-105
+activity#com.stripe.android.paymentsheet.ui.SepaMandateActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:32:9-35:69
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:34:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:35:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:33:13-82
+activity#com.stripe.android.paymentsheet.ExternalPaymentMethodProxyActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:36:9-39:68
+	android:exported
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:38:13-37
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:39:13-65
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:37:13-94
+activity#com.stripe.android.paymentsheet.paymentdatacollection.cvcrecollection.CvcRecollectionActivity
+ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:40:9-42:69
+	android:theme
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:42:13-66
+	android:name
+		ADDED from [com.stripe:paymentsheet:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/07f9cdda0bca77e59e3c8f7ccadf95ec/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:41:13-121
+activity#com.stripe.android.link.LinkForegroundActivity
+ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:8:9-13:61
+	android:launchMode
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:12:13-43
+	android:autoRemoveFromRecents
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:10:13-49
+	android:configChanges
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:11:13-115
+	android:theme
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:13:13-58
+	android:name
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:9:13-74
+activity#com.stripe.android.link.LinkRedirectHandlerActivity
+ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:14:9-31:20
+	android:launchMode
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:18:13-48
+	android:autoRemoveFromRecents
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:16:13-49
+	android:exported
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:17:13-36
+	android:theme
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:19:13-58
+	android:name
+		ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:15:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:complete+data:path:/${applicationId}+data:scheme:link-popup
+ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:20:13-30:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:complete+data:path:/com.joblessorg+data:scheme:link-popup
+ADDED from [com.stripe:link:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/7a190087229ce6418f9c55579c9a0902/transformed/jetified-link-20.48.6/AndroidManifest.xml:20:13-30:29
+activity#com.stripe.android.ui.core.cardscan.CardScanActivity
+ADDED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:8:9-11:69
+	android:exported
+		ADDED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:11:13-66
+	android:name
+		ADDED from [com.stripe:payments-ui-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/24fd0ab224e66f1561059a340e6e4c63/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:9:13-80
+package#com.android.chrome
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:11:9-54
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:11:18-51
+activity#com.stripe.android.view.AddPaymentMethodActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:15:9-18:57
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:17:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:18:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:16:13-76
+activity#com.stripe.android.view.PaymentMethodsActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:19:9-22:57
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:21:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:22:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:20:13-74
+activity#com.stripe.android.view.PaymentFlowActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:23:9-26:57
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:26:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:24:13-71
+activity#com.stripe.android.view.PaymentAuthWebViewActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:27:9-30:57
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:30:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:28:13-78
+activity#com.stripe.android.view.PaymentRelayActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:31:9-34:61
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:33:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:34:13-58
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:32:13-72
+activity#com.stripe.android.payments.StripeBrowserLauncherActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:40:9-44:61
+	android:launchMode
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:43:13-44
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:42:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:44:13-58
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:41:13-85
+activity#com.stripe.android.payments.StripeBrowserProxyReturnActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:45:9-62:20
+	android:launchMode
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:48:13-44
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:47:13-36
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:49:13-58
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:46:13-88
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:payment_return_url+data:path:/${applicationId}+data:scheme:stripesdk
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:50:13-61:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:payment_return_url+data:path:/com.joblessorg+data:scheme:stripesdk
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:50:13-61:29
+activity#com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:63:9-66:57
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:65:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:66:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:64:13-114
+activity#com.stripe.android.googlepaylauncher.GooglePayLauncherActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:67:9-70:66
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:69:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:70:13-63
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:68:13-90
+activity#com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:71:9-74:66
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:73:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:74:13-63
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:72:13-103
+activity#com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:75:9-78:68
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:77:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:78:13-65
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:76:13-107
+activity#com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity
+ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:79:9-82:61
+	android:exported
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:81:13-37
+	android:theme
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:82:13-58
+	android:name
+		ADDED from [com.stripe:payments-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/9e2572ef6e625084d18dad364c55db53/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:80:13-97
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+MERGED from [com.stripe:stripe-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/8b2eeed6eaf98d9c952b9ad2c7b1abe3/transformed/jetified-stripe-core-20.48.6/AndroidManifest.xml:7:5-79
+MERGED from [com.stripe:stripe-core:20.48.6] /Users/quantumalliance/.gradle/caches/transforms-3/8b2eeed6eaf98d9c952b9ad2c7b1abe3/transformed/jetified-stripe-core-20.48.6/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/1f07b3cd887496044d01630fa6e30a64/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/f4655d03d1aef040101c8a01db91e0a1/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.2.0] /Users/quantumalliance/.gradle/caches/transforms-3/eabbabb1ee8c2d890327f387f7c5cf69/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+activity#com.stripe.android.stripe3ds2.views.ChallengeActivity
+ADDED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:8:9-11:54
+	android:exported
+		ADDED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:11:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:6.1.8] /Users/quantumalliance/.gradle/caches/transforms-3/2c508b35b682ede724633345527b0b26/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:9:13-81
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/quantumalliance/.gradle/caches/transforms-3/1154c8d94cf4f385b831dd5b848c94c2/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/quantumalliance/.gradle/caches/transforms-3/897732cdd46dcb83a50d83e45f70d03b/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/quantumalliance/.gradle/caches/transforms-3/6160a937c3f18b80a0e501ab7f550297/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:3.6.0] /Users/quantumalliance/.gradle/caches/transforms-3/f7b90d770538d7f8c6cd600ce0f32174/transformed/jetified-android-maps-utils-3.6.0/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /Users/quantumalliance/.gradle/caches/transforms-3/d0f94d7b72b8b57c2aa7b11c6d1dd6b8/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.joblessorg.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.joblessorg.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/quantumalliance/.gradle/caches/transforms-3/57957d4a1c98d280c9aee60b4d211c6d/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/quantumalliance/.gradle/caches/transforms-3/85341a9f7f372d733e4d1fccfbbdecb0/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+meta-data#aia-compat-api-min-version
+ADDED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:10:9-12:33
+	android:value
+		ADDED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:12:13-30
+	android:name
+		ADDED from [com.google.android.instantapps:instantapps:1.1.0] /Users/quantumalliance/.gradle/caches/transforms-3/812c7577aa9e7d475dc068a3d234c1ab/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:11:13-54
