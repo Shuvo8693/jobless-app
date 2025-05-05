@@ -28,7 +28,6 @@ void main() async {
     ));
   });
 
-
     token =  await PrefsHelper.getString('token');
 }
 

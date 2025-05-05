@@ -1,0 +1,2 @@
+/Users/quantumalliance/StudioProjects/jobless-project/android/app/.cxx/Debug/6e3n683z/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/quantumalliance/StudioProjects/jobless-project/android/app/.cxx/Debug/6e3n683z/armeabi-v7a/CMakeFiles/rebuild_cache.dir
