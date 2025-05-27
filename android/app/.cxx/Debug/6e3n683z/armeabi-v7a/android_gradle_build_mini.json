@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/quantumalliance/development/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/quantumalliance/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/quantumalliance/StudioProjects/jobless-project/android/app/.cxx/Debug/6e3n683z/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/quantumalliance/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/quantumalliance/StudioProjects/jobless-project/android/app/.cxx/Debug/6e3n683z/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
