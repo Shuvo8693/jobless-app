@@ -113,7 +113,7 @@ class RewardsController extends GetxController{
     }
   }
 
-
+  /// response send to backend
   handlePayment(dynamic transactionId, String postId,int amountInCent,Map<String,dynamic> stripeResponseData) async {
     String userToken = await PrefsHelper.getString('token');
     print('Stripe response data===========: $stripeResponseData');
