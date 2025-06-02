@@ -124,6 +124,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                                   )),
                                 ],
                               ),
+                              /// Make payment Button
                               SizedBox(height: 15.h,),
                               CustomButton(
                                 onTap: ()async{
