@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
+import 'package:jobless/controllers/subscription_controller/revenue_cat_controller.dart';
 import 'package:jobless/helpers/prefs_helpers.dart';
 import 'package:jobless/s_key.dart';
 import 'package:jobless/themes/dark_theme.dart';
@@ -17,6 +18,8 @@ import 'helpers/route.dart';
 String token='';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  final RevenueCatController revenueCatController = Get.put(RevenueCatController());
+  await revenueCatController.initRevenueCat();
   Stripe.publishableKey = SKey.publishLiveKey;
   Map<String, Map<String, String>> languages = await di.init();
   SystemChrome.setPreferredOrientations([

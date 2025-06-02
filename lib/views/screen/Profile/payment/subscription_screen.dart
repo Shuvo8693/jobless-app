@@ -4,11 +4,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:jobless/controllers/subscription_controller/make_payment_controller.dart';
+import 'package:jobless/controllers/subscription_controller/revenue_cat_controller.dart';
 import 'package:jobless/controllers/subscription_controller/subscription_package_list_controller.dart';
 import 'package:jobless/helpers/route.dart';
 import 'package:jobless/utils/app_icons.dart';
 import 'package:jobless/views/base/custom_button.dart';
 import 'package:jobless/views/screen/Profile/payment/model/subscription_package_list_model.dart';
+import 'package:purchases_flutter/models/package_wrapper.dart';
 
 import '../../../../utils/app_colors.dart';
 import '../../../../utils/style.dart';
@@ -21,19 +23,22 @@ class SubscriptionScreen extends StatefulWidget {
 }
 
 class _SubscriptionScreenState extends State<SubscriptionScreen> {
-  final SubscriptionPackageListController _packageListController=Get.put(SubscriptionPackageListController());
+ // final SubscriptionPackageListController _packageListController=Get.put(SubscriptionPackageListController());
+  final RevenueCatController _revenueCatController = Get.put(RevenueCatController());
   final PaymentController _paymentController= Get.put(PaymentController());
   final ScrollController _scrollController = ScrollController();
   @override
   void initState() {
     super.initState();
-    _packageListController.fetchSubscriptionPackageList();
-    _scrollController.addListener(() async {
-      if (_scrollController.position.pixels >=
-          _scrollController.position.maxScrollExtent - 200 && !_packageListController.isFetchingMore.value) {
-        await _packageListController.loadMorePackage();
-      }
+    WidgetsBinding.instance.addPostFrameCallback((__)async{
+      await _revenueCatController.fetchOfferings();
     });
+    // _scrollController.addListener(() async {
+    //   if (_scrollController.position.pixels >=
+    //       _scrollController.position.maxScrollExtent - 200 && !_packageListController.isFetchingMore.value) {
+    //     await _packageListController.loadMorePackage();
+    //   }
+    // });
   }
   @override
   Widget build(BuildContext context) {
@@ -63,9 +68,9 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Obx((){
-             List<SubscriptionPackageResults> packageResult= _packageListController.subscriptionPackageModel.value.data?.attributes?.results??[];
+              final packageResult= _revenueCatController.packages;
 
-             if(_packageListController.timeLineLoading.value){
+             if(_revenueCatController.isLoading.value){
                return const Center(child: CircularProgressIndicator());
              }
              else if( packageResult.isEmpty){
@@ -75,15 +80,9 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               return Expanded(
                 child: ListView.builder(
                   controller: _scrollController,
-                  itemCount: packageResult.length + (_packageListController.isFetchingMore.value? 1:0),
+                  itemCount: packageResult.length ,
                   shrinkWrap: true,
                   itemBuilder: (BuildContext context, int index) {
-                    if(index == packageResult.length ){
-                      return const Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        child: Center(child: CircularProgressIndicator()),
-                      );
-                    }
                     var packageIndex = packageResult[index];
                     return Padding(
                       padding:  EdgeInsets.only(bottom: 8.h),
@@ -102,7 +101,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SvgPicture.asset(AppIcons.crownIcon,),
-                              Text('${packageIndex.name}',style: AppStyles.h2(family: "Schuyler",)),
+                              Text('${packageIndex.packageType}',style: AppStyles.h2(family: "Schuyler",)),
                               Divider(color: AppColors.dark2Color.withOpacity(0.2),),
                               ///=============>
                               Row(
@@ -111,13 +110,13 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                                   SizedBox(width: 8.w),
                                   SizedBox(
                                     width: 260.w,
-                                      child: Text('${packageIndex.description}',overflow: TextOverflow.clip,style: AppStyles.h4(family: "Schuyler",))),
+                                      child: Text('${packageIndex.storeProduct.productCategory}',overflow: TextOverflow.clip,style: AppStyles.h4(family: "Schuyler",))),
                               ],),
                               ///=============>
                               SizedBox(height: 15.h,),
                               Row(
                                 children: [
-                                  Text('\$${packageIndex.price}',style: AppStyles.h1(
+                                  Text('\$${packageIndex.storeProduct.price}',style: AppStyles.h1(
                                     family: "Schuyler",
                                   )),
                                   Text('/ Monthly',style: AppStyles.h5(
@@ -128,7 +127,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                               SizedBox(height: 15.h,),
                               CustomButton(
                                 onTap: ()async{
-                                  await _paymentController.makePayment(packageIndex.price.toString(), 'USD', packageIndex.id);
+                                 // await _paymentController.makePayment(packageIndex.price.toString(), 'USD', packageIndex.id);
                                 },
                                 color: Colors.black,
                                 text: 'Buy',

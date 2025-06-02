@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Network Access for API calls -->
+	<key>com.apple.security.network.client</key>
+	<true/>
+
+	<!-- In-App Purchase Capability -->
+	<key>com.apple.developer.in-app-payments</key>
+	<array>
+		<string>merchant.com.jobless.app</string>
+	</array>
+
+	<!-- Push Notifications for subscription updates -->
+	<key>aps-environment</key>
+	<string>development</string>
+</dict>
+</plist>

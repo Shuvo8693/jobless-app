@@ -85,11 +85,17 @@ class _LocationSelectorScreenState extends State<LocationSelectorScreen> {
                 myLocationButtonEnabled: true,
                 onMapCreated: _onMapCreated,
                 initialCameraPosition: CameraPosition(
-                  target: _center,
+                  target: _pickedLocation??_center,
                   zoom: 11.0,
                 ),
                 onTap: (position) {
                   _moveCamera(position);
+                },
+                markers: {
+                  Marker(
+                      markerId: MarkerId('marker-id'),
+                    position: LatLng(_pickedLocation?.latitude??0, _pickedLocation?.longitude??0)
+                  )
                 },
                 myLocationEnabled: true,
               ),
@@ -151,9 +157,9 @@ class _LocationSelectorScreenState extends State<LocationSelectorScreen> {
                       color: AppColors.primaryColor,
                       size: 24.sp,
                     ),
-                    onPressed: () {
+                    onPressed: () async {
                       // Handle search button press logic
-                      _goToSearchLocation(_searchController.text);
+                     await _goToSearchLocation(_searchController.text);
                       onChangeTextFieldValue.clear();
                     },
                   ),
@@ -177,12 +183,14 @@ class _LocationSelectorScreenState extends State<LocationSelectorScreen> {
                         return Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: InkWell(
-                            onTap: () {
+                            onTap: () async{
                               String selectedLocation = onChangeTextFieldValue[index].toString();
                               print(selectedLocation);
                               if (selectedLocation.isNotEmpty == true) {
                                 _searchController.text = selectedLocation;
                                 print(_searchController.text);
+                                await _goToSearchLocation(_searchController.text);
+                                onChangeTextFieldValue.clear();
                               }
                             },
                             child: Text(onChangeTextFieldValue[index].toString(),

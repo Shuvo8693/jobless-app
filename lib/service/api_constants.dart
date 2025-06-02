@@ -14,13 +14,13 @@ class ApiConstants{
 
   ///>>>>>>>>>>>>>>>>>>>>>>>>>>> ALl Api>>>>>>>>>>>>>>>>>>>
 
-static String registerUrl= '/auth/register';
-static String categoryUrl= '/users/category';
+static String registerUrl= '$baseUrl/auth/register';
+static String categoryUrl= '$baseUrl/users/category';
 static String emailSendUrl= '$baseUrl/auth/forgot-password';
-static String verifyEmailWithOtpUrl= '/auth/verify-email';
-static String logInUrl= '/auth/login';
-static String resetPasswordUrl= '/auth/reset-password';
-static String timelinePostUrl= '/post/home';
+static String verifyEmailWithOtpUrl= '$baseUrl/auth/verify-email';
+static String logInUrl= '$baseUrl/auth/login';
+static String resetPasswordUrl= '$baseUrl/auth/reset-password';
+static String timelinePostUrl= '$baseUrl/post/home';
 static String myPostUrl= '$baseUrl/post';
 static String createPostUrl= '$baseUrl/post';
 static String createGroupPostUrl= '$baseUrl/post';
