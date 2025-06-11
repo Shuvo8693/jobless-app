@@ -8,19 +8,19 @@ class ApiConstants{
 
   /// https://api.joblessorg.com
 
-  static String baseUrl = "http://api.joblessorg.com/v1";
-  static String imageBaseUrl = "http://api.joblessorg.com";
+  static String baseUrl = "https://api.joblessorg.com/v1";
+  static String imageBaseUrl = "https://api.joblessorg.com";
   static String socketUrl = "https://ws.joblessorg.com";
 
   ///>>>>>>>>>>>>>>>>>>>>>>>>>>> ALl Api>>>>>>>>>>>>>>>>>>>
 
-static String registerUrl= '$baseUrl/auth/register';
-static String categoryUrl= '$baseUrl/users/category';
-static String emailSendUrl= '$baseUrl/auth/forgot-password';
-static String verifyEmailWithOtpUrl= '$baseUrl/auth/verify-email';
+static String registerUrl= '/auth/register';
+static String categoryUrl= '/users/category';
+static String emailSendUrl= '/auth/forgot-password';
+static String verifyEmailWithOtpUrl= '/auth/verify-email';
 static String logInUrl= '$baseUrl/auth/login';
-static String resetPasswordUrl= '$baseUrl/auth/reset-password';
-static String timelinePostUrl= '$baseUrl/post/home';
+static String resetPasswordUrl= '/auth/reset-password';
+static String timelinePostUrl= '/post/home';
 static String myPostUrl= '$baseUrl/post';
 static String createPostUrl= '$baseUrl/post';
 static String createGroupPostUrl= '$baseUrl/post';

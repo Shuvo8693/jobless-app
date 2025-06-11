@@ -363,9 +363,7 @@ class ApiClient extends GetxService {
       debugPrint('====> API Call: $uri\nHeader: ${headers ?? mainHeaders}');
       debugPrint('====> API Body: $body');
 
-      http.Response response = await client
-          .post(
-        Uri.parse(ApiConstants.baseUrl + uri),
+      http.Response response = await client.post(Uri.parse(ApiConstants.baseUrl + uri),
         body: body,
         headers: headers ?? mainHeaders,
       )

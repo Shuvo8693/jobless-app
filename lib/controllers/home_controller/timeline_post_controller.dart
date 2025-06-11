@@ -4,6 +4,7 @@ import 'package:jobless/service/api_check.dart';
 import 'package:jobless/service/api_client.dart';
 import 'package:jobless/service/api_constants.dart';
 import 'package:jobless/views/screen/Home/modal/home_timeline_post.dart';
+import 'package:http/http.dart' as http;
 
 class TimelinePostController extends GetxController {
   RxBool timeLineLoading = false.obs;
@@ -31,7 +32,13 @@ class TimelinePostController extends GetxController {
         'Content-Type': 'multipart/form-data',
         'Authorization': 'Bearer $token'
       };
-      Response response = await ApiClient.getData(url, headers: headers);
+     Response response = await ApiClient.getData(url, headers: headers);
+     //  var request =  http.Request('GET', Uri.parse(url));
+     //  request.headers.addAll(headers);
+     //  request.body = jsonEncode(body);
+     //  http.StreamedResponse streamedResponse = await request.send();
+     //
+     //  http.Response response = await http.Response.fromStream(streamedResponse);
       if (response.statusCode == 200) {
         var responseData = response.body;
         var attributes = responseData['data']?['attributes'] as Map<String, dynamic>? ??{};

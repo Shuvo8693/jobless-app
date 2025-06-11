@@ -8,6 +8,7 @@ import 'package:jobless/service/api_check.dart';
 import 'package:jobless/service/api_client.dart';
 import 'package:jobless/service/api_constants.dart';
 import 'package:jobless/views/screen/Auth/model/user_profile.dart';
+import 'package:http/http.dart' as http;
 
 class LoginController extends GetxController {
   TextEditingController emailCtrl = TextEditingController();
@@ -25,9 +26,17 @@ class LoginController extends GetxController {
 
     try {
       verifyLoading.value= true;
-      Response response = await ApiClient.postData(ApiConstants.logInUrl, body:  jsonEncode(body), headers: headers);
+
+     // Response response = await ApiClient.postData(ApiConstants.logInUrl, body:  jsonEncode(body), headers: headers);
+      var request =  http.Request('POST', Uri.parse(ApiConstants.logInUrl));
+       request.headers.addAll(headers);
+       request.body = jsonEncode(body);
+      http.StreamedResponse streamedResponse = await request.send();
+
+      http.Response response = await http.Response.fromStream(streamedResponse);
+      final responseData = jsonDecode(response.body);
       if (response.statusCode == 200) {
-        final responseData = response.body;
+
         profileAttributes= ProfileAttributes.fromJson(responseData['data']['attributes']);
         print(profileAttributes.toString());
        await PrefsHelper.setString('token', profileAttributes.tokens!.access?.token);
@@ -39,9 +48,9 @@ class LoginController extends GetxController {
       } else {
         print('Error>>>');
         print('Error>>>${response.body}');
-        ApiChecker.checkApi(response);
+        ApiChecker.checkApi(responseData);
         errorMessage.value= 'Login failed';
-        Get.snackbar('', "${response.body['message']}");
+        Get.snackbar('', "${responseData['message']}");
       }
     } on Exception catch (e) {
       errorMessage.value= 'Something went wrong';

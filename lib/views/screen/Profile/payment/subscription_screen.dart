@@ -101,7 +101,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SvgPicture.asset(AppIcons.crownIcon,),
-                              Text('${packageIndex.packageType}',style: AppStyles.h2(family: "Schuyler",)),
+                              Text(packageIndex.storeProduct.title,style: AppStyles.h2(family: "Schuyler",)),
                               Divider(color: AppColors.dark2Color.withOpacity(0.2),),
                               ///=============>
                               Row(
@@ -119,9 +119,9 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                                   Text('\$${packageIndex.storeProduct.price}',style: AppStyles.h1(
                                     family: "Schuyler",
                                   )),
-                                  Text('/ Monthly',style: AppStyles.h5(
-                                    family: "Schuyler",
-                                  )),
+                                  // Text('/ Monthly',style: AppStyles.h5(
+                                  //   family: "Schuyler",
+                                  // )),
                                 ],
                               ),
                               /// Make payment Button
@@ -129,6 +129,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                               CustomButton(
                                 onTap: ()async{
                                  // await _paymentController.makePayment(packageIndex.price.toString(), 'USD', packageIndex.id);
+                                  await _revenueCatController.purchasePackage(packageIndex);
                                 },
                                 color: Colors.black,
                                 text: 'Buy',
