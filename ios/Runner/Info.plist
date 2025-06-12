@@ -2,64 +2,67 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleDevelopmentRegion</key>
-    <string>$(DEVELOPMENT_LANGUAGE)</string>
-    <key>CFBundleDisplayName</key>
-    <string>Jobless</string>
-    <key>CFBundleExecutable</key>
-    <string>$(EXECUTABLE_NAME)</string>
-    <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-    <key>CFBundleInfoDictionaryVersion</key>
-    <string>6.0</string>
-    <key>CFBundleName</key>
-    <string>jobless</string>
-    <key>CFBundlePackageType</key>
-    <string>APPL</string>
-    <key>CFBundleShortVersionString</key>
-    <string>$(FLUTTER_BUILD_NAME)</string>
-    <key>CFBundleSignature</key>
-    <string>????</string>
-    <key>CFBundleVersion</key>
-    <string>$(FLUTTER_BUILD_NUMBER)</string>
-    <key>LSRequiresIPhoneOS</key>
-    <true/>
-    <key>UILaunchStoryboardName</key>
-    <string>LaunchScreen</string>
-    <key>UIMainStoryboardFile</key>
-    <string>Main</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>We need access to your location to show nearby places</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>We need access to your location</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>We need access to your photo library</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Jobless</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>jobless</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>GoogleMapsAPIKey</key>
+	<string>AIzaSyAszXC1be8aJ37eHuNcBm_-O1clWkPUwV4</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>We need access to Apple Music</string>
+	<key>NSFileProviderUsageDescription</key>
+	<string>We need access to your files to view PDF documents</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need access to your location</string>
+	<!-- Location access -->
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Jobless uses location to help you find local community groups and connect with nearby users for networking opportunities.</string>
+
+    <!-- Camera access -->
     <key>NSCameraUsageDescription</key>
-    <string>We need access to your camera</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>We need access to your microphone</string>
-    <key>NSAppleMusicUsageDescription</key>
-    <string>We need access to Apple Music</string>
-    <key>NSFileProviderUsageDescription</key>
-    <string>We need access to your files to view PDF documents</string>
-    <key>GoogleMapsAPIKey</key>
-    <string>AIzaSyAszXC1be8aJ37eHuNcBm_-O1clWkPUwV4</string>
-    <key>UISupportedInterfaceOrientations</key>
-    <array>
-        <string>UIInterfaceOrientationPortrait</string>
-        <string>UIInterfaceOrientationLandscapeLeft</string>
-        <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-    <key>UISupportedInterfaceOrientations~ipad</key>
-    <array>
-        <string>UIInterfaceOrientationPortrait</string>
-        <string>UIInterfaceOrientationPortraitUpsideDown</string>
-        <string>UIInterfaceOrientationLandscapeLeft</string>
-        <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-    <key>CADisableMinimumFrameDurationOnPhone</key>
-    <true/>
-    <key>UIApplicationSupportsIndirectInputEvents</key>
-    <true/>
+    <string>Jobless needs camera access to let you share photos in posts and update your profile picture.</string>
+
+    <!-- Photo library access -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Jobless needs photo access to let you share images in your posts and update your profile.</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 </dict>
 </plist>
