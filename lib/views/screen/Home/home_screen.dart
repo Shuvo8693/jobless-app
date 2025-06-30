@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:jobless/controllers/home_controller/report_controller.dart';
 import 'package:jobless/controllers/home_controller/timeline_post_controller.dart';
 import 'package:jobless/controllers/profile_controller/profile_controller.dart';
 import 'package:jobless/helpers/prefs_helpers.dart';
@@ -12,6 +13,9 @@ import 'package:jobless/utils/app_image.dart';
 import 'package:jobless/utils/app_string.dart';
 import 'package:jobless/utils/style.dart';
 import 'package:jobless/views/base/bottom_menu..dart';
+import 'package:jobless/views/base/custom_button.dart' show CustomButton;
+import 'package:jobless/views/base/custom_text_field.dart';
+import 'package:jobless/views/screen/Widget/custom_dropdown_field.dart';
 import 'package:jobless/views/screen/Widget/post_card.dart';
 
 import '../../../utils/app_colors.dart';
@@ -30,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final ProfileController _profileController = Get.put(ProfileController(), tag: 'homeScreen');
   final ScrollController _scrollController = ScrollController();
  String postIdFromNotification='';
+
 
 
   @override
@@ -208,6 +213,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         shrinkWrap: true,
                         primary: false,
                         itemBuilder: (context, index) {
+                          final threeDotKey = GlobalKey();
                           if (index == timeLinePostResults.length) {
                             return const Padding(
                               padding: EdgeInsets.symmetric(vertical: 16.0),
@@ -216,7 +222,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           }
                           final resultIndex = timeLinePostResults[index];
 
-                          return HomeTimeLinePostCart(results: resultIndex, timelinePostController: _timelinePostController,);
+                          return HomeTimeLinePostCart(
+                            results: resultIndex,
+                            timelinePostController: _timelinePostController,
+                            isthreeDot: true,
+                            threeDotOnTap: ()async{
+                             await dropDownOptions(postId: resultIndex.sId, threeDotKey: threeDotKey);
+                            }, threeDotKey: threeDotKey,
+                          );
                         },
                         separatorBuilder: (context, index) {
                           return const Divider(color: Color(0xffC4D3F6));
@@ -235,5 +248,161 @@ class _HomeScreenState extends State<HomeScreen> {
       super.dispose();
       _scrollController.dispose();
     }
+
+    dropDownOptions({String? postId,GlobalKey<State<StatefulWidget>>? threeDotKey} )async{
+       List<String> items = ['Block','Report'];
+      final RenderBox renderBox = threeDotKey!.currentContext!.findRenderObject() as RenderBox;
+      final position = renderBox.localToGlobal(Offset.zero);
+
+      final result = await showMenu<String>(
+        context: context,
+        position: RelativeRect.fromLTRB(
+          position.dx ,
+          position.dy ,
+          position.dx ,
+          position.dy ,
+        ),
+        items: [
+           ...List.generate(items.length, (index){
+             return PopupMenuItem<String>(
+               value: items[index],
+               child: Text(items[index]),
+             );
+           })
+        ],
+      );
+
+      // Handle the selected result
+      if (result != null) {
+        switch (result) {
+          case 'Bloc':
+          // Handle edit
+            break;
+          case 'Report':
+           showReportBottomSheetGetX(context,postId: postId);
+            break;
+        }
+      }
+    }
+
+  /// GetX Bottom Sheet
+  void showReportBottomSheetGetX(BuildContext context, {String? postId}) {
+    final formKey = GlobalKey<FormState>();
+    ReportController reportController = Get.put(ReportController());
+
+    Get.bottomSheet(
+      Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20),
+            topRight: Radius.circular(20),
+          ),
+        ),
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(24),
+          child: Form(
+            key: formKey,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Handle bar
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.h),
+
+                // Header
+                Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.orange[50],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Icon(
+                        Icons.report_gmailerrorred_rounded,
+                        color: Colors.orange[600],
+                        size: 24,
+                      ),
+                    ),
+                    SizedBox(width: 12.w),
+                    Expanded(
+                      child: Text(
+                        'Report Post',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20.sp,
+                          color: Colors.black87,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20.h),
+                Obx(() => CustomDropdownField(
+                  labelText: 'Reason for Report',
+                  hintText: 'Select a reason',
+                  value: reportController.selectedReason.value,
+                  items: reportController.reportReasons,
+                  prefixIcon: Icon(Icons.warning_amber_rounded, color: Colors.grey[400], size: 20),
+                  onChanged: (String? newValue) {
+                    reportController.selectedReason.value = newValue ?? '';
+                  },
+                )),
+                SizedBox(height: 16.h),
+                CustomTextField(
+                  controller: reportController.descriptionCtrl,
+                  labelText: 'Description',
+                  hintText: 'Provide details about why you\'re reporting this post...',
+                  maxLine: 4,
+                  contentPaddingVertical: 12,
+                  keyboardType: TextInputType.multiline,
+                ),
+                SizedBox(height: 24.h),
+
+                // Buttons
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton(
+                        onPressed: () => Get.back(),
+                        child: Text('Cancel'),
+                      ),
+                    ),
+                    SizedBox(width: 12.w),
+                    Expanded(
+                      flex: 2,
+                      child: Obx(() => CustomButton(
+                        loading: reportController.isLoading.value,
+                        onTap: () async {
+                          if (formKey.currentState!.validate()) {
+                            await reportController.submitReport(postId: postId);
+                          }
+                        },
+                        text: 'Submit Report',
+                      ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+    );
+  }
   }
 

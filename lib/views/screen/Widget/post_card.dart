@@ -29,9 +29,10 @@ class HomeTimeLinePostCart extends StatefulWidget {
   bool isthreeDot;
   Function()? threeDotOnTap;
   Results? results;
+  Key? threeDotKey;
   final TimelinePostController timelinePostController;
 
-  HomeTimeLinePostCart({super.key, this.isthreeDot = false, this.threeDotOnTap, this.results,required this.timelinePostController});
+  HomeTimeLinePostCart({super.key, required this.threeDotKey, this.isthreeDot = false, this.threeDotOnTap, this.results,required this.timelinePostController});
 
   @override
   State<HomeTimeLinePostCart> createState() => _HomeTimeLinePostCartState();
@@ -93,7 +94,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
                 ),
 
                 /// here premium mark icon
-                widget.results?.author?.paymentStatus=='paid'? SvgPicture.asset(AppIcons.tikmarkIcon):SizedBox.shrink()
+                widget.results?.author?.paymentStatus=='paid'? SvgPicture.asset(AppIcons.tikmarkIcon):SizedBox.shrink(),
               ],
             ),
             subtitle: Row(
@@ -121,6 +122,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
             trailing: widget.isthreeDot
                 ? InkWell(
                     onTap: widget.threeDotOnTap,
+                    key: widget.threeDotKey??UniqueKey(),
                     child: CircleAvatar(
                         radius: 18,
                         backgroundColor: Colors.transparent,
@@ -205,7 +207,8 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
                             )
                           : SvgPicture.asset(
                               AppIcons.likeIcon,
-                            ));
+                            ),
+                  );
                 },
               ),
               ///Comment section
@@ -282,18 +285,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
                       style: AppStyles.customSize(
                           size: 10, fontWeight: FontWeight.w400),
                   ),
-                  SizedBox(width: 18.w,),
-
-                  InkWell(
-                    onTap: (){
-                     showReportBottomSheetGetX(context , postId: widget.results?.sId);
-                    },
-                    child: Text("Report",
-                        style: AppStyles.customSize(
-                            size: 15, fontWeight: FontWeight.w400),
-                    ),
-                  ),
-
+                  SizedBox(width: 12.w,),
                 ],
               )
             ],
@@ -390,125 +382,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
     );
   }
 
-  /// GetX Bottom Sheet Version (Alternative)
-  void showReportBottomSheetGetX(BuildContext context, {String? postId}) {
-    final formKey = GlobalKey<FormState>();
-    ReportController reportController = Get.put(ReportController());
 
-    Get.bottomSheet(
-      Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
-          ),
-        ),
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(24),
-          child: Form(
-            key: formKey,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Handle bar
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 20.h),
-
-                // Header
-                Row(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: Colors.orange[50],
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Icon(
-                        Icons.report_gmailerrorred_rounded,
-                        color: Colors.orange[600],
-                        size: 24,
-                      ),
-                    ),
-                    SizedBox(width: 12.w),
-                    Expanded(
-                      child: Text(
-                        'Report Post',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 20.sp,
-                          color: Colors.black87,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 20.h),
-                Obx(() => CustomDropdownField(
-                  labelText: 'Reason for Report',
-                  hintText: 'Select a reason',
-                  value: reportController.selectedReason.value,
-                  items: reportController.reportReasons,
-                  prefixIcon: Icon(Icons.warning_amber_rounded, color: Colors.grey[400], size: 20),
-                  onChanged: (String? newValue) {
-                    reportController.selectedReason.value = newValue ?? '';
-                  },
-                )),
-                SizedBox(height: 16.h),
-                CustomTextField(
-                  controller: reportController.descriptionCtrl,
-                  labelText: 'Description',
-                  hintText: 'Provide details about why you\'re reporting this post...',
-                  maxLine: 4,
-                  contentPaddingVertical: 12,
-                  keyboardType: TextInputType.multiline,
-                ),
-                SizedBox(height: 24.h),
-
-                // Buttons
-                Row(
-                  children: [
-                    Expanded(
-                      child: OutlinedButton(
-                        onPressed: () => Get.back(),
-                        child: Text('Cancel'),
-                      ),
-                    ),
-                    SizedBox(width: 12.w),
-                    Expanded(
-                      flex: 2,
-                      child: Obx(() => CustomButton(
-                        loading: reportController.isLoading.value,
-                        onTap: () async {
-                          if (formKey.currentState!.validate()) {
-                            await reportController.submitReport(postId: postId);
-                          }
-                        },
-                        text: 'Submit Report',
-                      ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-    );
-  }
 
  /// ============ Comment bottom sheet ============
   void showCommentsBottomSheet(BuildContext context) {
