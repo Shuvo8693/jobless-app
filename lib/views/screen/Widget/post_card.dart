@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:jobless/controllers/auth_controller/like_controller.dart';
 import 'package:jobless/controllers/home_controller/comment_post_controller.dart';
 import 'package:jobless/controllers/home_controller/get_comment_controller.dart';
+import 'package:jobless/controllers/home_controller/report_controller.dart';
 import 'package:jobless/controllers/home_controller/rewards/rewards_controller.dart';
 import 'package:jobless/controllers/home_controller/timeline_post_controller.dart';
 import 'package:jobless/controllers/subscription_controller/make_payment_controller.dart';
@@ -15,12 +16,14 @@ import 'package:jobless/utils/date_time_formation/difference_formation.dart';
 import 'package:jobless/utils/style.dart';
 import 'package:jobless/views/base/casess_network_image.dart';
 import 'package:jobless/views/base/custom_button.dart';
+import 'package:jobless/views/base/custom_text_field.dart';
 import 'package:jobless/views/screen/Home/modal/comment_modal.dart';
 import 'package:jobless/views/screen/Home/modal/home_timeline_post.dart';
 import 'package:jobless/views/screen/Home/pdf_view_screen.dart';
 
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_image.dart';
+import 'custom_dropdown_field.dart';
 
 class HomeTimeLinePostCart extends StatefulWidget {
   bool isthreeDot;
@@ -137,8 +140,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
             SizedBox(height: 10.h),
 
             /// here image and pdf condition will apply
-            widget.results?.image != null &&
-                    widget.results?.image!.isNotEmpty == true
+            widget.results?.image != null && widget.results?.image!.isNotEmpty == true
                 ? widget.results?.image!.contains('.pdf') == true
                     ? GestureDetector(
                         onTap: () {
@@ -174,8 +176,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
                         ),
                       )
                     : CustomNetworkImage(
-                        imageUrl:
-                            '${ApiConstants.imageBaseUrl}${widget.results?.image}',
+                        imageUrl: '${ApiConstants.imageBaseUrl}${widget.results?.image}',
                         height: 180.h,
                         width: double.infinity,
                         borderRadius: BorderRadius.circular(15.r),
@@ -279,7 +280,20 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
                   ),
                   Text("Comment",
                       style: AppStyles.customSize(
-                          size: 10, fontWeight: FontWeight.w400)),
+                          size: 10, fontWeight: FontWeight.w400),
+                  ),
+                  SizedBox(width: 18.w,),
+
+                  InkWell(
+                    onTap: (){
+                     showReportBottomSheetGetX(context , postId: widget.results?.sId);
+                    },
+                    child: Text("Report",
+                        style: AppStyles.customSize(
+                            size: 15, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+
                 ],
               )
             ],
@@ -293,7 +307,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
   }
 
   void showGiftAmountBottomSheet(BuildContext context,String postId) {
-    final _formKey = GlobalKey<FormState>();
+    final formKey = GlobalKey<FormState>();
     final TextEditingController amountController = TextEditingController();
 
     showModalBottomSheet(
@@ -311,7 +325,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
             right: 16,
           ),
           child: Form(
-            key: _formKey,
+            key: formKey,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -347,7 +361,7 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
                 // Action button
                CustomButton(
                       onTap:()async {
-                        if (_formKey.currentState!.validate()) {
+                        if (formKey.currentState!.validate()) {
                           // Do something with the entered amount
                           final amount = amountController.text;
                           if(amount.isNotEmpty && postId.isNotEmpty){
@@ -376,6 +390,127 @@ class _HomeTimeLinePostCartState extends State<HomeTimeLinePostCart> {
     );
   }
 
+  /// GetX Bottom Sheet Version (Alternative)
+  void showReportBottomSheetGetX(BuildContext context, {String? postId}) {
+    final formKey = GlobalKey<FormState>();
+    ReportController reportController = Get.put(ReportController());
+
+    Get.bottomSheet(
+      Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20),
+            topRight: Radius.circular(20),
+          ),
+        ),
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(24),
+          child: Form(
+            key: formKey,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Handle bar
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.h),
+
+                // Header
+                Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.orange[50],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Icon(
+                        Icons.report_gmailerrorred_rounded,
+                        color: Colors.orange[600],
+                        size: 24,
+                      ),
+                    ),
+                    SizedBox(width: 12.w),
+                    Expanded(
+                      child: Text(
+                        'Report Post',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20.sp,
+                          color: Colors.black87,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20.h),
+                Obx(() => CustomDropdownField(
+                  labelText: 'Reason for Report',
+                  hintText: 'Select a reason',
+                  value: reportController.selectedReason.value,
+                  items: reportController.reportReasons,
+                  prefixIcon: Icon(Icons.warning_amber_rounded, color: Colors.grey[400], size: 20),
+                  onChanged: (String? newValue) {
+                    reportController.selectedReason.value = newValue ?? '';
+                  },
+                )),
+                SizedBox(height: 16.h),
+                CustomTextField(
+                  controller: reportController.descriptionCtrl,
+                  labelText: 'Description',
+                  hintText: 'Provide details about why you\'re reporting this post...',
+                  maxLine: 4,
+                  contentPaddingVertical: 12,
+                  keyboardType: TextInputType.multiline,
+                ),
+                SizedBox(height: 24.h),
+
+                // Buttons
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton(
+                        onPressed: () => Get.back(),
+                        child: Text('Cancel'),
+                      ),
+                    ),
+                    SizedBox(width: 12.w),
+                    Expanded(
+                      flex: 2,
+                      child: Obx(() => CustomButton(
+                        loading: reportController.isLoading.value,
+                        onTap: () async {
+                          if (formKey.currentState!.validate()) {
+                            await reportController.submitReport(postId: postId);
+                          }
+                        },
+                        text: 'Submit Report',
+                      ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+    );
+  }
+
+ /// ============ Comment bottom sheet ============
   void showCommentsBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,

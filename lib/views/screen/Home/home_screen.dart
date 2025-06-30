@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   getProfileImage() async {
-    String authorID = await PrefsHelper.getString('authorId');
+    String? authorID = await PrefsHelper.getString('authorId');
     if (authorID != null && authorID.isNotEmpty) {
       await _profileController.fetchProfile(authorID);
     }
@@ -63,7 +63,6 @@ class _HomeScreenState extends State<HomeScreen> {
       postIdFromNotification = postId;
     }
   }
-
 
  /* scrollToPost(String postId) {
     int? index = _timelinePostController.timeLinePost.value.results?.indexWhere((result) => result.sId == postId).toInt();

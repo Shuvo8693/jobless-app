@@ -94,7 +94,7 @@ class SettingScreen extends StatelessWidget {
           ElevatedButton.icon(
             style: ButtonStyle(
               elevation: WidgetStateProperty.all(0),
-                fixedSize: WidgetStateProperty.all(Size(350.w, 60.h)),
+                fixedSize: WidgetStateProperty.all(Size(350.w, 50.h)),
               backgroundColor: WidgetStateProperty.all(Colors.pink[50]), // Light pink background color
               foregroundColor: WidgetStateProperty.all(Colors.red), // Red color for text and icon
               shape: WidgetStateProperty.all(RoundedRectangleBorder(
@@ -103,80 +103,154 @@ class SettingScreen extends StatelessWidget {
               padding: WidgetStateProperty.all(EdgeInsets.symmetric(vertical: 12, horizontal: 16)), // Padding to make it look more like the design
             ),
             onPressed: () {
-              showDeleteDialog(context);
+              showDeleteBottomSheet(context);
             },
             label: Text('Delete Account',style: AppStyles.h4(),),
             icon: Icon(Icons.delete),
           ),
-          SizedBox(height: 16.h),
+          SizedBox(height: 25.h),
         ],
       ),
     );
   }
 
-  void showDeleteDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      barrierDismissible: true,
-      builder: (BuildContext context) {
-        final formKey = GlobalKey<FormState>();
-        AccountDeleteController accountDeleteController = Get.put(AccountDeleteController());
+  // Bottom Sheet Function
+  void showDeleteBottomSheet(BuildContext context) {
+    final formKey = GlobalKey<FormState>();
+    AccountDeleteController accountDeleteController = Get.put(AccountDeleteController());
 
-        return LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints constraints) {
-            return Form(
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (BuildContext context) {
+        return Padding(
+          padding: EdgeInsets.only(
+            bottom: MediaQuery.of(context).viewInsets.bottom,
+          ),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20.r),
+                topRight: Radius.circular(20.r),
+              ),
+            ),
+            padding: EdgeInsets.all(24),
+            child: Form(
               key: formKey,
-              child: AlertDialog(
-                title: Text('Do you want to delete your account?', style: AppStyles.h3()),
-                content: SingleChildScrollView(  // Add scrollable content
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(
-                      maxHeight:  MediaQuery.of(context).size.height * 0.6,
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'All your changes will be deleted and you will no longer be able to access them.',
-                          style: AppStyles.h6(),
-                        ),
-                        SizedBox(height: 8.h),
-                        CustomTextField(
-                          controller: accountDeleteController.passCtrl,
-                          hintText: "enter your password",
-                          contentPaddingVertical: 14.h,
-                        ),
-                        SizedBox(height: 8.h),
-                      ],
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Handle bar
+                  Center(
+                    child: Container(
+                      width: 40.w,
+                      height: 4.h,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(2.r),
+                      ),
                     ),
                   ),
-                ),
-                actions: <Widget>[
+                  SizedBox(height: 20.h),
+
+                  // Warning Icon and Title
                   Row(
                     children: [
-                      Expanded(child: CustomOutlineButton(onTap: (){Get.back();}, text: 'Cancel')),
-                      SizedBox(width: 10.w),
+                      Container(
+                        padding: EdgeInsets.all(8.sp),
+                        decoration: BoxDecoration(
+                          color: Colors.red[50],
+                          borderRadius: BorderRadius.circular(8.r),
+                        ),
+                        child: Icon(
+                          Icons.warning_rounded,
+                          color: Colors.red,
+                          size: 24.sp,
+                        ),
+                      ),
+                      SizedBox(width: 12.w),
                       Expanded(
-                        child: CustomButton(
-                          color: Colors.redAccent,
-                          onTap: () {
-                            if (formKey.currentState!.validate()) {
-                              // Your delete action goes here
-                            }
-                          },
-                          text: 'Delete',
+                        child: Text(
+                          'Delete Account',
+                          style: AppStyles.h3().copyWith(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 20.sp,
+                            color: Colors.black87,
+                          ),
                         ),
                       ),
                     ],
                   ),
+                  SizedBox(height: 16.h),
+
+                  // Description
+                  Text(
+                    'All your changes will be deleted and you will no longer be able to access them.',
+                    style: AppStyles.h6().copyWith(
+                      color: Colors.grey[600],
+                      height: 1.5,
+                      fontSize: 14.sp,
+                    ),
+                  ),
+                  SizedBox(height: 20.h),
+
+                  // Password Field Label
+                  Text(
+                    'Enter your password to confirm',
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black87,
+                    ),
+                  ),
+                  SizedBox(height: 8.h),
+
+                  // Password Field
+                  CustomTextField(
+                      contentPaddingVertical: 14.h,
+                      isPassword: true,
+                      isObscureText: true,
+                      suffixIcon: Icon(Icons.lock_outline),
+                      controller: accountDeleteController.passCtrl),
+                  SizedBox(height: 24.h),
+
+                  // Action Buttons
+                  Row(
+                    children: [
+                      // Cancel Button
+                      Expanded(
+                        child: CustomOutlineButton(onTap: (){
+                          Get.back();
+                        }, text: 'Cancel'),
+                      ),
+                      SizedBox(width: 12.w),
+
+                      // Delete Button
+                      Expanded(
+                        child: SizedBox(
+                          height: 48.h,
+                          child: CustomButton(
+                              onTap: (){
+                                if(accountDeleteController.passCtrl.text.isNotEmpty){
+
+                                }else{
+                                  Get.snackbar('Empty Field', ' Please write your password');
+                                }
+                              }, text: 'Delete'),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 16.h),
                 ],
               ),
-            );
-          },
+            ),
+          ),
         );
       },
     );
   }
-
-
 }

@@ -48,9 +48,8 @@ class LoginController extends GetxController {
       } else {
         print('Error>>>');
         print('Error>>>${response.body}');
-        ApiChecker.checkApi(responseData);
         errorMessage.value= 'Login failed';
-        Get.snackbar('', "${responseData['message']}");
+        Get.snackbar('Failed', "${responseData['message']}");
       }
     } on Exception catch (e) {
       errorMessage.value= 'Something went wrong';

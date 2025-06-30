@@ -186,8 +186,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       dropdownIconPosition: IconPosition.trailing,
                       // Default country code
                       onChanged: (phone) {
-                        print(
-                            "Phpone>>>${phone.completeNumber}"); // Gets the complete phone number including the country code
+                        print("Phone>>>${phone.completeNumber}"); // Gets the complete phone number including the country code
                         setState(() {
                           _signUpCtrl.phoneNumber.value =
                               phone.completeNumber.isNotEmpty
@@ -199,8 +198,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                     /// Select Gender
                     SizedBox(height: 10.h),
-                    Text(AppString.genderText,
-                        style: AppStyles.h4(family: "Schuyler")),
+                    Text('Gender (Optional)', style: AppStyles.h4(family: "Schuyler")),
                     SizedBox(
                       height: 10.h,
                     ),

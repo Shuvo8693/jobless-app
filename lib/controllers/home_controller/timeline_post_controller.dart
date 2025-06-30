@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:get/get.dart';
 import 'package:jobless/helpers/prefs_helpers.dart';
 import 'package:jobless/service/api_check.dart';
@@ -76,4 +78,5 @@ class TimelinePostController extends GetxController {
      await fetchTimelinePost(isLoadMore: true);
     }
   }
+
 }
