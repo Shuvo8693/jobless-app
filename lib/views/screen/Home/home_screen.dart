@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:jobless/controllers/home_controller/block_controller.dart';
 import 'package:jobless/controllers/home_controller/report_controller.dart';
 import 'package:jobless/controllers/home_controller/timeline_post_controller.dart';
 import 'package:jobless/controllers/profile_controller/profile_controller.dart';
@@ -14,6 +15,7 @@ import 'package:jobless/utils/app_string.dart';
 import 'package:jobless/utils/style.dart';
 import 'package:jobless/views/base/bottom_menu..dart';
 import 'package:jobless/views/base/custom_button.dart' show CustomButton;
+import 'package:jobless/views/base/custom_outlinebutton.dart';
 import 'package:jobless/views/base/custom_text_field.dart';
 import 'package:jobless/views/screen/Widget/custom_dropdown_field.dart';
 import 'package:jobless/views/screen/Widget/post_card.dart';
@@ -227,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             timelinePostController: _timelinePostController,
                             isthreeDot: true,
                             threeDotOnTap: ()async{
-                             await dropDownOptions(postId: resultIndex.sId, threeDotKey: threeDotKey);
+                             await dropDownOptions(userResults: resultIndex, threeDotKey: threeDotKey);
                             }, threeDotKey: threeDotKey,
                           );
                         },
@@ -249,7 +251,7 @@ class _HomeScreenState extends State<HomeScreen> {
       _scrollController.dispose();
     }
 
-    dropDownOptions({String? postId,GlobalKey<State<StatefulWidget>>? threeDotKey} )async{
+    dropDownOptions({Results? userResults ,GlobalKey<State<StatefulWidget>>? threeDotKey} )async{
        List<String> items = ['Block','Report'];
       final RenderBox renderBox = threeDotKey!.currentContext!.findRenderObject() as RenderBox;
       final position = renderBox.localToGlobal(Offset.zero);
@@ -275,11 +277,11 @@ class _HomeScreenState extends State<HomeScreen> {
       // Handle the selected result
       if (result != null) {
         switch (result) {
-          case 'Bloc':
-          // Handle edit
+          case 'Block':
+          showBlockUserDialog(context, userResults: userResults);
             break;
           case 'Report':
-           showReportBottomSheetGetX(context,postId: postId);
+           showReportBottomSheetGetX(context,postId: userResults?.sId??'');
             break;
         }
       }
@@ -402,6 +404,50 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
+    );
+  }
+
+ /// Block user dialog
+  void showBlockUserDialog(BuildContext context, {Results? userResults}) {
+      final BlockController blockController = Get.put(BlockController());
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Block User'),
+          content: Text('Are you sure you want to block "${userResults?.author?.fullName}"? You won\'t see their posts or be able to message them.'),
+          actions: [
+            CustomOutlineButton(
+              width: 40.w,
+              height: 30.h,
+              onTap: () {
+                Get.back();
+              },
+              text: 'Cancel',
+            ),
+            Obx(() {
+              return CustomButton(
+                width: 40.w,
+                height: 30.h,
+                color: Colors.red,
+                loading: blockController.isLoading.value,
+                onTap: () async {
+                  await blockController.block(userId: userResults?.author?.sId,messageFunc: (message){
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(message??''),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  });
+                  Get.back();
+                },
+                text: 'Block',
+              );
+            }),
+          ],
+        );
+      },
     );
   }
   }

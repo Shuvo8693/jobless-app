@@ -48,6 +48,7 @@ static String notificationUrl= '$baseUrl/notification';
 static String rewardPaymentUrl= '$baseUrl/payment/post/reward';
 static String deleteAccountUrl= '$baseUrl/auth/delete-me';
 static String reportAccountUrl= '$baseUrl/report';
+static String blockUserUrl = '$baseUrl/users/block';
 static String groupTimelinePostUrl(dynamic groupId) => '$baseUrl/group/posts?groupId=$groupId';
 static String getMessageUrl(dynamic chatId) => '$baseUrl/message/get-messages?chatId=$chatId';
 static String updateGroupChatUrl(dynamic chatId) => '$baseUrl/chat?id=$chatId';
