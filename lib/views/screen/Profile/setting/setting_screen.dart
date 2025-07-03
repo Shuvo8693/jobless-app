@@ -233,9 +233,9 @@ class SettingScreen extends StatelessWidget {
                         child: SizedBox(
                           height: 48.h,
                           child: CustomButton(
-                              onTap: (){
+                              onTap: ()async{
                                 if(accountDeleteController.passCtrl.text.isNotEmpty){
-
+                                 await accountDeleteController.removeAccount();
                                 }else{
                                   Get.snackbar('Empty Field', ' Please write your password');
                                 }

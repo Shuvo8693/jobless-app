@@ -216,7 +216,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           .toList(),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
-                          return 'Select your gender';
+                          return null;
                         }
                         return null;
                       },

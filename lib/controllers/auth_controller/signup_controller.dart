@@ -72,7 +72,7 @@ class SignupController extends GetxController {
         'role': 'user',
         if(phoneNumbers.isNotEmpty) 'phoneNumber': phoneNumbers,
         'dataOfBirth': selectedDate.value,
-        'gender': gender!,
+       if(gender?.isNotEmpty ==true ) 'gender': gender!,
         'jobExperience': isJobExperience.value.toString(),
         'jobLessCategory': jsonEncode(categoriList),
         'address' : address.value

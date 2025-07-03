@@ -385,6 +385,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Expanded(
                       flex: 2,
                       child: Obx(() => CustomButton(
+                        height: 35.h,
                         loading: reportController.isLoading.value,
                         onTap: () async {
                           if (formKey.currentState!.validate()) {
