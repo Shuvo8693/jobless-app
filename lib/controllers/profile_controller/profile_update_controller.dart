@@ -114,9 +114,9 @@ class ProfileUpdateController extends GetxController {
         'fullName': fullNameController.text,
         'email': emailController.text,
         'role': 'user',
-        'phoneNumber': phoneNumber.value,
+       if(phoneNumber.value.isNotEmpty) 'phoneNumber': phoneNumber.value,
         'dataOfBirth': selectedDate.value,
-        'gender': gender ?? '',
+        if(gender?.isNotEmpty==true) 'gender': gender! ,
        if(categoriList.isNotEmpty) 'jobLessCategory': jsonEncode(categoriList),
         'address': addressController.text,
         'bio': bioController.text,
@@ -149,17 +149,18 @@ class ProfileUpdateController extends GetxController {
 
 
       var response = await request.send();
-
+      var responseBody = await http.Response.fromStream(response);
+      print('Profile updated successfully: ${responseBody.body}');
+      var decodedBody = jsonDecode(responseBody.body);
       if (response.statusCode == 200 ) {
         await _profileControllerForBioScreen.fetchProfile(authorId);
         await _profileControllerForPersonalInfo.fetchProfile(authorId);
         await _profileControllerForMyProfile.fetchProfile(authorId);
-        var responseBody = await http.Response.fromStream(response);
-        print('Profile updated successfully: ${responseBody.body}');
-         var decodedBody=jsonDecode(responseBody.body);
         Get.showSnackbar(GetSnackBar(message:decodedBody['message'].toString() ,duration: const Duration(seconds: 2),snackPosition: SnackPosition.TOP,maxWidth: 330.w,borderRadius: 15,));
+
       } else {
         print('Error: ${response.statusCode}');
+        Get.showSnackbar(GetSnackBar(message:decodedBody['message'].toString() ,duration: const Duration(seconds: 2),snackPosition: SnackPosition.TOP,maxWidth: 330.w,borderRadius: 15,));
       }
     } catch (e) {
       print('Exception in updating profile: $e');

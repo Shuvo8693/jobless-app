@@ -191,16 +191,21 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                   IntlPhoneField(
                     controller: _profileUpdateCtrl.phoneNumberController,
                     decoration: InputDecoration(
-                        hintText: "Phone Nomber",
+                        hintText: "Phone Number",
                         contentPadding: EdgeInsets.symmetric(horizontal: 15.h)),
                     showCountryFlag: true,
                     validator: (value) {
                       // Check if value is null or empty
                       // Check if the phone number contains only digits and has a valid length (adjust if necessary)
-                      if (!RegExp(r'^[0-9]{7,15}$').hasMatch(value!.number)) {
-                        return 'Enter a valid phone number';
+                      if(value?.number.isNotEmpty == true){
+                        if ( value?.number != null && !RegExp(r'^[0-9]{7,15}$').hasMatch(value!.number)) {
+                          return 'Enter a valid phone number';
+                        }
+                      }else{
+                        return null;
                       }
                       return null;
+
                     },
                     initialCountryCode: 'US',
                     flagsButtonMargin: EdgeInsets.only(left: 10),
@@ -220,7 +225,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
 
                   /// Select Gender
                   SizedBox(height: 10.h),
-                  Text('${AppString.genderText} (required)', style: AppStyles.h4(family: "Schuyler")),
+                  Text('${AppString.genderText} (Optional)', style: AppStyles.h4(family: "Schuyler")),
                   SizedBox(
                     height: 10.h,
                   ),
@@ -237,7 +242,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                         .toList(),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Select your gender';
+                        return null;
                       }
                       return null;
                     },
@@ -258,7 +263,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                   ),
                   Obx(() => GestureDetector(
                         onTap: () async {
-                          _profileUpdateCtrl.selectDate(context);
+                        await _profileUpdateCtrl.selectDate(context);
                         },
                         child: Container(
                           height: 50,
