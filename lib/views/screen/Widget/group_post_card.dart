@@ -25,12 +25,14 @@ import '../../../utils/app_image.dart';
 class GroupPostCard extends StatefulWidget {
   bool isthreeDot;
   Function()? threeDotOnTap;
+  Key? threeDotKey;
   GroupTimeLinePostResults? groupTimelinePostResult;
   final GroupTimelinePostController groupTimelinePostController;
 
   GroupPostCard(
       {super.key,
       this.isthreeDot = false,
+        this.threeDotKey,
       this.threeDotOnTap,
       this.groupTimelinePostResult,
       required this.groupTimelinePostController});
@@ -70,8 +72,7 @@ class _GroupPostCardState extends State<GroupPostCard> {
           ListTile(
             contentPadding: EdgeInsets.zero,
             leading: CustomNetworkImage(
-              imageUrl:
-                  "${ApiConstants.imageBaseUrl}${widget.groupTimelinePostResult?.author!.image}",
+              imageUrl: "${ApiConstants.imageBaseUrl}${widget.groupTimelinePostResult?.author!.image}",
               height: 48.h,
               width: 48.w,
               boxShape: BoxShape.circle,
@@ -120,13 +121,13 @@ class _GroupPostCardState extends State<GroupPostCard> {
             ),
             trailing: widget.isthreeDot
                 ? InkWell(
+                   key: widget.threeDotKey,
                     onTap: widget.threeDotOnTap,
                     child: CircleAvatar(
-                        radius: 18,
+                        radius: 18.sp,
                         backgroundColor: Colors.transparent,
                         child: SvgPicture.asset(AppIcons.threeDotIcon)),
-                  )
-                : const SizedBox(),
+                  ) : const SizedBox(),
           ),
 
           /// Post Image and post Text Section

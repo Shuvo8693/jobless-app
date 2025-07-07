@@ -37,7 +37,7 @@ class OtherGroupRequestCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              SvgPicture.asset(icon ??AppIcons.starIcon),
+              SvgPicture.asset(icon ?? AppIcons.starIcon),
               const SizedBox(width: 5,),
               Text('${otherGroupResults.privacy}',style: AppStyles.h6(color: AppColors.subTextColor)),
             ],

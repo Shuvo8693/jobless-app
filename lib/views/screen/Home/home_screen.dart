@@ -250,7 +250,7 @@ class _HomeScreenState extends State<HomeScreen> {
       super.dispose();
       _scrollController.dispose();
     }
-
+    /// Dropdown options
     dropDownOptions({Results? userResults ,GlobalKey<State<StatefulWidget>>? threeDotKey} )async{
        List<String> items = ['Block','Report'];
       final RenderBox renderBox = threeDotKey!.currentContext!.findRenderObject() as RenderBox;
@@ -360,7 +360,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   onChanged: (String? newValue) {
                     reportController.selectedReason.value = newValue ?? '';
                   },
-                )),
+                 ),
+                ),
                 SizedBox(height: 16.h),
                 CustomTextField(
                   controller: reportController.descriptionCtrl,
@@ -451,5 +452,6 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     );
   }
+
   }
 
