@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:jobless/controllers/home_controller/block_controller.dart';
 import 'package:jobless/controllers/message_controller/send_message_controller.dart';
 import 'package:jobless/controllers/message_controller/web_socket_controller.dart';
 import 'package:jobless/controllers/profile_controller/profile_controller.dart';
@@ -15,6 +16,8 @@ import 'package:jobless/service/api_constants.dart';
 import 'package:jobless/utils/date_time_formation/data_age_formation.dart';
 import 'package:jobless/utils/date_time_formation/difference_formation.dart';
 import 'package:jobless/views/base/casess_network_image.dart';
+import 'package:jobless/views/base/custom_button.dart';
+import 'package:jobless/views/base/custom_outlinebutton.dart';
 
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_icons.dart';
@@ -37,7 +40,7 @@ class _MessageInboxScreenState extends State<MessageInboxScreen> {
  final ProfileController _profileController=Get.put(ProfileController());
  late final SendMessageController _sendMessageController ;
   OtherParticipant? otherParticipants;
-  final List<String> menuOptions = [/*'Delete Message',*/ 'View Profile'];
+  final List<String> menuOptions = ['View Profile', 'Block'];
   DataAgeFormation dataAgeFormation=DataAgeFormation();
   DifferenceFormation differenceFormation=DifferenceFormation();
   final ScrollController _scrollController=ScrollController();
@@ -159,8 +162,7 @@ class _MessageInboxScreenState extends State<MessageInboxScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                                '${otherParticipants?.fullName}',
+                            Text('${otherParticipants?.fullName}',
                                 style: AppStyles.h5()
                             ),
                             _profileController.profile.value.jobLessCategory!=null && _profileController.profile.value.jobLessCategory!.isNotEmpty
@@ -180,8 +182,8 @@ class _MessageInboxScreenState extends State<MessageInboxScreen> {
                           child: PopupMenuButton<String>(
                             icon: SvgPicture.asset(AppIcons.messageMenuIcon),
                             onSelected: (value) {
-                              if (value == 'Delete Message') {
-                                print('Delete message');
+                              if (value == 'Block') {
+                                print('Block');
                               } else if (value == 'View Profile') {
                                 Get.toNamed(AppRoutes.friendprofileViewcreen,arguments: {'friendID':otherParticipants?.id,'isRemoveCancel':true});
                                 print('View profile');
@@ -190,8 +192,11 @@ class _MessageInboxScreenState extends State<MessageInboxScreen> {
                             itemBuilder: (BuildContext context) {
                               return menuOptions.map((String option) {
                                 return PopupMenuItem<String>(
-                                  onTap: (){
-
+                                  onTap: ()async{
+                                    print(option);
+                                    if( option== 'Block'){
+                                      showBlockUserDialog(context,userResults: otherParticipants);
+                                    }
                                   },
                                   value: option,
                                   child: Text(option),
@@ -466,5 +471,49 @@ Widget showMessage(MessageData responseMessage){
     }
   }
 
+
+  /// Block user dialog
+  void showBlockUserDialog(BuildContext context, {OtherParticipant? userResults}) {
+    final BlockController blockController = Get.put(BlockController());
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Block User'),
+          content: Text('Are you sure you want to block "${userResults?.fullName}"? You won\'t see their posts or be able to message them.'),
+          actions: [
+            CustomOutlineButton(
+              width: 40.w,
+              height: 30.h,
+              onTap: () {
+                Get.back();
+              },
+              text: 'Cancel',
+            ),
+            Obx(() {
+              return CustomButton(
+                width: 40.w,
+                height: 30.h,
+                color: Colors.red,
+                loading: blockController.isLoading.value,
+                onTap: () async {
+                  await blockController.block(userId: userResults?.id,messageFunc: (message){
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(message??''),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  });
+                  Get.back();
+                },
+                text: 'Block',
+              );
+            }),
+          ],
+        );
+      },
+    );
+  }
 
 }
