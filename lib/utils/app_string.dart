@@ -27,7 +27,7 @@ class AppString {
   static String phoneText='Phone Number';
   static String genderText='Gender';
   static String dateOfBirthText='Date Of Birth';
-  static String signUoConditionText='By creating an account, I accept the Terms & Conditions & Privacy Policy.';
+  static String signUoConditionText='By creating an account, I accept the Terms & Conditions.';
 
   static String forgotPasswordText="Forgot Password";
   static String subforgotPassword="Please enter your email address to reset password.";

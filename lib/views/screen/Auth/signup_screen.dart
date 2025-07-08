@@ -8,6 +8,7 @@ import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:jobless/utils/app_colors.dart';
 import 'package:jobless/utils/app_icons.dart';
 import 'package:jobless/views/base/custom_button.dart';
+import 'package:jobless/views/screen/Widget/terms&conditions_check_box.dart';
 
 import '../../../controllers/auth_controller/signup_controller.dart';
 import '../../../helpers/route.dart';
@@ -302,31 +303,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     SizedBox(height: 16.h),
 
                     /// Condition Check Box
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Checkbox(
-                          value: _signUpCtrl.isChecked,
-                          onChanged: (bool? value) {
-                            setState(() {
-                              _signUpCtrl.isChecked = value!;
-                            });
-                          },
-                        ),
-                        Expanded(
-                          child: Text(
-                            AppString.signUoConditionText,
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppStyles.h6(),
-                          ),
-                        ),
-                      ],
+                    // Option 1: Separate Terms and Conditions links
+                    TermsConditionsCheckbox(
+                      isChecked: _signUpCtrl.isChecked,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          _signUpCtrl.isChecked = value ?? false;
+                        });
+                      },
+                      onTermsConditionsTap: () {
+
+                      },
                     ),
 
                     SizedBox(height: 10.h),
-
                     ///==============Action Button========
+                    _signUpCtrl.isChecked?
                     Obx(() {
                       return CustomButton(
                           loading: _signUpCtrl.registerLoading.value,
@@ -336,8 +328,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             }
                           },
                           text: AppString.signupText);
-                    }),
-
+                     },
+                    ): CustomButton(onTap: (){}, text: 'SignUp',color: Colors.grey,),
                     SizedBox(
                       height: 10.h,
                     ),
