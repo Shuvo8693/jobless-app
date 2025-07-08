@@ -18,6 +18,7 @@ import 'package:jobless/utils/app_icons.dart';
 import 'package:jobless/utils/app_string.dart';
 import 'package:jobless/utils/style.dart';
 import 'package:jobless/views/base/custom_button.dart';
+import 'package:jobless/views/screen/Widget/post_input_field.dart';
 
 
 class FeelingGroupPostScreen extends StatefulWidget {
@@ -180,50 +181,68 @@ class _FeelingGroupPostScreenState extends State<FeelingGroupPostScreen> {
               SizedBox(height: 30.h,),
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 24),
-                  child: TextField(
+                  child:  PostInputField(
                     controller: postCtrl,
-                    cursorColor: AppColors.subTextColor,
-                    // textAlign: TextAlign.center,  // Centers the text and cursor
-                    decoration: InputDecoration(
-                      hintText: "What’s happening ?",
-                      contentPadding: EdgeInsets.zero,
-                      hintStyle: AppStyles.h6(color: AppColors.subTextColor), // Customize the hint text color
-                      fillColor: Colors.transparent,
-                      filled: true,
-                      border: const OutlineInputBorder(
-                        borderSide: BorderSide.none, // Transparent border
-                      ),
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent), // Transparent when not focused
-                      ),
-                      focusedBorder: const OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent), // Transparent when focused
-                      ), // Adjust the prefix constraints to fit properly
-                      prefixIcon: Padding(
-                        padding:  const EdgeInsets.only(right: 10),
-                        child: CircleAvatar(
-                          backgroundImage: NetworkImage('${ApiConstants.imageBaseUrl}$_profileImage',),),
-                      ),
-                      ///-----Privacy section----
-                      suffixIcon: InkWell(
-                        onTap: (){
-                          postSelect(context);
-                        },
-                        child: CircleAvatar(
-                          radius: 15,
-                          backgroundColor: Colors.transparent,
-                          child: SvgPicture.asset(
-                              AppIcons.threeDotIcon,
-                              height: 20.h,
-                              color: const Color(0xffC4D3F6)),
-                        ),
-                      ),
-                    ),
-                  )),
+                    profileImageUrl: '${ApiConstants.imageBaseUrl}$_profileImage',
+                    hintText: "What's happening ?",
+                    onMenuTap: () {
+                      postSelect(context);
+                    },
+                    onChanged: (valueText) {
+                      bool isMatchedWithInappropriate =  _groupCreatePostController.inappropriateWords.contains(valueText.toLowerCase());
+                      if(isMatchedWithInappropriate){
+                        Get.snackbar('Inappropriate Word detected', "Don't use ${valueText.toLowerCase()}");
+                        postCtrl.clear();
+                      }
+                    },
+                  ),
 
-            ],
-          )
-          )),
+                  // TextField(
+                  //   controller: postCtrl,
+                  //   cursorColor: AppColors.subTextColor,
+                  //   // textAlign: TextAlign.center,  // Centers the text and cursor
+                  //   decoration: InputDecoration(
+                  //     hintText: "What’s happening ?",
+                  //     contentPadding: EdgeInsets.zero,
+                  //     hintStyle: AppStyles.h6(color: AppColors.subTextColor), // Customize the hint text color
+                  //     fillColor: Colors.transparent,
+                  //     filled: true,
+                  //     border: const OutlineInputBorder(
+                  //       borderSide: BorderSide.none, // Transparent border
+                  //     ),
+                  //     enabledBorder: const OutlineInputBorder(
+                  //       borderSide: BorderSide(color: Colors.transparent), // Transparent when not focused
+                  //     ),
+                  //     focusedBorder: const OutlineInputBorder(
+                  //       borderSide: BorderSide(color: Colors.transparent), // Transparent when focused
+                  //     ), // Adjust the prefix constraints to fit properly
+                  //     prefixIcon: Padding(
+                  //       padding:  const EdgeInsets.only(right: 10),
+                  //       child: CircleAvatar(
+                  //         backgroundImage: NetworkImage('${ApiConstants.imageBaseUrl}$_profileImage',),),
+                  //     ),
+                  //     ///-----Privacy section----
+                  //     suffixIcon: InkWell(
+                  //       onTap: (){
+                  //         postSelect(context);
+                  //       },
+                  //       child: CircleAvatar(
+                  //         radius: 15,
+                  //         backgroundColor: Colors.transparent,
+                  //         child: SvgPicture.asset(
+                  //             AppIcons.threeDotIcon,
+                  //             height: 20.h,
+                  //             color: const Color(0xffC4D3F6)),
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+                 ),
+
+              ],
+            )
+          ),
+      ),
     );
   }
 

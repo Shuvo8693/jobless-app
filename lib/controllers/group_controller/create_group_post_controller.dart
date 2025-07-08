@@ -107,4 +107,36 @@ class GroupCreatePostController extends GetxController {
       throw Exception('Unsupported file type');
     }
   }
+
+  List<String> inappropriateWords = [
+    // Profanity
+    'damn', 'hell', 'crap', 'shit', 'fuck', 'bitch', 'bastard', 'ass', 'asshole',
+
+    // Offensive terms
+    'stupid', 'idiot', 'moron', 'dumb', 'loser', 'freak', 'weirdo',
+
+    // Hate speech indicators
+    'hate', 'kill', 'die', 'murder', 'violence', 'threat', 'harm',
+
+    // Discriminatory terms (mild examples)
+    'racist', 'sexist', 'bigot', 'discrimination',
+
+    // Inappropriate content
+    'porn', 'sex', 'nude', 'naked', 'adult', 'xxx',
+
+    // Spam/promotional flags
+    'spam', 'scam', 'fake', 'bot', 'advertisement',
+
+    // Violence-related
+    'fight', 'punch', 'hit', 'attack', 'hurt', 'pain',
+
+    // Drug-related
+    'drugs', 'weed', 'cocaine', 'marijuana', 'alcohol',
+
+    // Bullying terms
+    'ugly', 'fat', 'skinny', 'short', 'tall', 'weak',
+
+    // General inappropriate
+    'inappropriate', 'offensive', 'rude', 'mean', 'nasty',
+  ];
 }

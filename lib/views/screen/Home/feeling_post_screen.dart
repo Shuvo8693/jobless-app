@@ -174,8 +174,7 @@ class _FeelingPostScreenState extends State<FeelingPostScreen> {
             SizedBox(height: 30.h,),
             Padding(
               padding:  EdgeInsets.symmetric(horizontal: 24.h),
-              child: // Replace your old TextField code with this:
-              PostInputField(
+              child: PostInputField(
                 controller: postCtrl,
                 profileImageUrl: '${ApiConstants.imageBaseUrl}${_profileController.profile.value.image}',
                 hintText: "What's happening ?",
