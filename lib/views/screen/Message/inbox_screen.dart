@@ -59,7 +59,6 @@ class _MessageInboxScreenState extends State<MessageInboxScreen> {
     super.initState();
     getAuthorId();
     getParticipants();
-
     _sendMessageController=Get.put(SendMessageController(webSocketController: _webSocketController),tag: 'personal_message');
     WidgetsBinding.instance.addPostFrameCallback((__)async{
      await fetchChatHistory();
@@ -165,7 +164,7 @@ class _MessageInboxScreenState extends State<MessageInboxScreen> {
                             Text('${otherParticipants?.fullName}',
                                 style: AppStyles.h5()
                             ),
-                            _profileController.profile.value.jobLessCategory!=null && _profileController.profile.value.jobLessCategory!.isNotEmpty
+                            _profileController.profile.value.jobLessCategory != null && _profileController.profile.value.jobLessCategory!.isNotEmpty
                                 ? Text(_profileController.profile.value.jobLessCategory!.first,
                               style: AppStyles.h6(
                                   color: AppColors.dark2Color),

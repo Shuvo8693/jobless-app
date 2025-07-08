@@ -120,39 +120,38 @@ class _HomeScreenState extends State<HomeScreen> {
           body: Column(
             children: [
 
-              /// Search Section
+              /// Profile Section
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 10.w),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    InkWell(
-                      onTap: () {
-                        Get.toNamed(AppRoutes.personalInfoScreen);
-                      },
-                      child: Obx(() {
-                        return Container(
-                          height: 48.h,
-                          width: 48.w,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: _profileController.profile.value.image !=
-                                    null &&
-                                    _profileController.profile.value.image
-                                        ?.isNotEmpty == true
-                                    ? NetworkImage('${ApiConstants
-                                    .imageBaseUrl}${_profileController.profile
-                                    .value.image}')
-                                    : AssetImage(AppImage.personRound128Img)),
-                          ),
-                        );
-                      }
-
-                      ),
-                    ),
-                    InkWell(
+                  InkWell(
+                    onTap: () {
+                      Get.toNamed(AppRoutes.personalInfoScreen);
+                    },
+                    child: Obx(() {
+                      return Container(
+                        height: 48.h,
+                        width: 48.w,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: _profileController.profile.value.image !=
+                                          null &&
+                                      _profileController.profile.value.image
+                                              ?.isNotEmpty ==
+                                          true
+                                  ? NetworkImage(
+                                      '${ApiConstants.imageBaseUrl}${_profileController.profile.value.image}')
+                                  : AssetImage(AppImage.personRound128Img)),
+                        ),
+                      );
+                    }),
+                  ),
+                  /// Post Section
+                  InkWell(
                       onTap: () {
                         Get.toNamed(AppRoutes.feelpostScreen);
                       },
@@ -160,9 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 46.h,
                         width: 240.w,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius
-                              .circular(23)
-                              .r,
+                          borderRadius: BorderRadius.circular(23.r),
                           color: Colors.white,
                           boxShadow: [AppStyles.boxShadow],
                         ),
@@ -188,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
 
-              /// Job Post Section
+              ///  Post View Section
               Expanded(
                 child: SizedBox(
                   height: 568.h,

@@ -18,6 +18,7 @@ import 'package:jobless/views/base/custom_button.dart';
 
 import 'package:jobless/views/base/custom_outlinebutton.dart';
 import 'package:jobless/views/base/custom_text_field.dart';
+import 'package:jobless/views/screen/Widget/post_input_field.dart';
 
 import '../../../controllers/file_controller.dart';
 import '../../../utils/app_colors.dart';
@@ -34,7 +35,7 @@ class FeelingPostScreen extends StatefulWidget {
 class _FeelingPostScreenState extends State<FeelingPostScreen> {
 
   final FileController _createPostCtrl=Get.put(FileController());
-  PostController postController= Get.put(PostController());
+  PostController postController = Get.put(PostController());
   TextEditingController postCtrl=TextEditingController();
   final ProfileController _profileController=Get.put(ProfileController(),tag: 'feelingPostScreen');
 
@@ -169,54 +170,32 @@ class _FeelingPostScreenState extends State<FeelingPostScreen> {
                ),*/
              ],
            ),
-        
+           /// Write something section
             SizedBox(height: 30.h,),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: TextField(
+              padding:  EdgeInsets.symmetric(horizontal: 24.h),
+              child: // Replace your old TextField code with this:
+              PostInputField(
                 controller: postCtrl,
-                cursorColor: AppColors.subTextColor,
-               // textAlign: TextAlign.center,  // Centers the text and cursor
-                decoration: InputDecoration(
-                  hintText: "What’s happening ?",
-                  contentPadding: EdgeInsets.zero,
-                  hintStyle: AppStyles.h6(color: AppColors.subTextColor), // Customize the hint text color
-                  fillColor: Colors.transparent,
-                  filled: true,
-                  border: const OutlineInputBorder(
-                    borderSide: BorderSide.none, // Transparent border
-                  ),
-                  enabledBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.transparent), // Transparent when not focused
-                  ),
-                  focusedBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.transparent), // Transparent when focused
-                  ), // Adjust the prefix constraints to fit properly
-                  prefixIcon: Padding(
-                    padding:  const EdgeInsets.only(right: 10),
-                    child: CircleAvatar(
-                      backgroundImage: NetworkImage('${ApiConstants.imageBaseUrl}${_profileController.profile.value.image}',),),
-                  ),
-                  ///-----Privacy section----
-                  suffixIcon: InkWell(
-                    onTap: (){
-                      postSelect(context);
-                    },
-                    child: CircleAvatar(
-                      radius: 15,
-                      backgroundColor: Colors.transparent,
-                      child: SvgPicture.asset(
-                        AppIcons.threeDotIcon,
-                        height: 20.h,
-                        color: const Color(0xffC4D3F6)),
-                    ),
-                  ),
-                ),
-              )),
+                profileImageUrl: '${ApiConstants.imageBaseUrl}${_profileController.profile.value.image}',
+                hintText: "What's happening ?",
+                onMenuTap: () {
+                  postSelect(context);
+                },
+                onChanged: (valueText) {
+                 bool isMatchedWithInappropriate =  postController.inappropriateWords.contains(valueText.toLowerCase());
+                  if(isMatchedWithInappropriate){
+                    Get.snackbar('Inappropriate Word detected', "Don't use ${valueText.toLowerCase()}");
+                    postCtrl.clear();
+                  }
+                 },
+              ),
+            ),
         
           ],
         )
-      )),
+      ),
+      ),
     );
   }
 
