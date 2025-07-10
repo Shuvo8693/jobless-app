@@ -6,12 +6,14 @@ class TermsConditionsCheckbox extends StatefulWidget {
   final bool isChecked;
   final ValueChanged<bool?>? onChanged;
   final VoidCallback? onTermsConditionsTap;
+  final VoidCallback? onPrivacyPolicyTap;
 
   const TermsConditionsCheckbox({
     super.key,
     required this.isChecked,
     this.onChanged,
     this.onTermsConditionsTap,
+    this.onPrivacyPolicyTap,
   });
 
   @override
@@ -49,6 +51,23 @@ class _TermsConditionsCheckboxState extends State<TermsConditionsCheckbox> {
                   ),
                   recognizer: TapGestureRecognizer()
                     ..onTap = widget.onTermsConditionsTap,
+                ),
+                TextSpan(
+                  text: ' & ',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 14.sp,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Privacy policy',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 14.sp,
+                    decoration: TextDecoration.underline,
+                  ),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = widget.onPrivacyPolicyTap,
                 ),
                  TextSpan(
                   text: '.',
