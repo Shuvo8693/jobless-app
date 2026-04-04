@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
+import 'package:jobless/service/url_launcher_service.dart';
 import 'package:jobless/utils/app_colors.dart';
 import 'package:jobless/utils/app_icons.dart';
 import 'package:jobless/views/base/custom_button.dart';
@@ -241,7 +242,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             height: 50,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                                border: Border.all(color: Get.theme.primaryColor.withOpacity(0.1)),
+                                border: Border.all(color: Get.theme.primaryColor.withValues(alpha: 0.1)),
                                 borderRadius: BorderRadius.circular(14.r),
                                 color: AppColors.fillColor),
                             child: Padding(
@@ -311,8 +312,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           _signUpCtrl.isChecked = value ?? false;
                         });
                       },
-                      onTermsConditionsTap: () {
-
+                      onTermsConditionsTap: () async{
+                      await URLLauncherService.launchURL("https://joblessorg.com/terms-conditions");
+                      },
+                      onPrivacyPolicyTap: ()async{
+                        await URLLauncherService.launchURL("https://joblessorg.com/privacy-policy");
                       },
                     ),
 
@@ -356,13 +360,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ],
                       ),
                     ),
-
-                    SizedBox(
-                      height: 25.h,
-                    ),
+                    SizedBox(height: 25.h),
                   ],
                 ),
-              )),
+              ),
+          ),
+
         ),
       ),
     );
